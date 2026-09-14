@@ -1,0 +1,73 @@
+import type { BudgetItem, OfficialSource } from '../types/transparency';
+
+export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
+  {
+    id: 'B-01',
+    sector: 'Rural Development & Panchayat',
+    sectorHi: 'ग्रामीण विकास एवं पंचायत',
+    allocated: '₹4,250 Cr',
+    spent: '₹3,890 Cr',
+    transparencyScore: '92%',
+    status: 'Verified / Audit Complete (Sample)',
+    statusHi: 'सत्यापित / ऑडिट पूर्ण (नमूना)',
+    officialSourceUrl: 'https://finance.gov.in',
+  },
+  {
+    id: 'B-02',
+    sector: 'Public Works (Roads & Bridges)',
+    sectorHi: 'लोक निर्माण (सड़क एवं पुल)',
+    allocated: '₹6,100 Cr',
+    spent: '₹5,400 Cr',
+    transparencyScore: '86%',
+    status: 'Under Review (Sample)',
+    statusHi: 'समीक्षाधीन (नमूना)',
+    officialSourceUrl: 'https://mowr.gov.in',
+  },
+  {
+    id: 'B-03',
+    sector: 'Health & Family Welfare',
+    sectorHi: 'स्वास्थ्य एवं परिवार कल्याण',
+    allocated: '₹3,800 Cr',
+    spent: '₹3,450 Cr',
+    transparencyScore: '95%',
+    status: 'Verified / Transparent (Sample)',
+    statusHi: 'सत्यापित / पारदर्शी (नमूना)',
+    officialSourceUrl: 'https://mohfw.gov.in',
+  },
+  {
+    id: 'B-04',
+    sector: 'Education & Skill Development',
+    sectorHi: 'शिक्षा एवं कौशल विकास',
+    allocated: '₹5,200 Cr',
+    spent: '₹4,910 Cr',
+    transparencyScore: '94%',
+    status: 'Verified / Transparent (Sample)',
+    statusHi: 'सत्यापित / पारदर्शी (नमूना)',
+    officialSourceUrl: 'https://education.gov.in',
+  },
+];
+
+export const BUDGET_OFFICIAL_SOURCES: OfficialSource[] = [
+  {
+    id: 'src-budget-1',
+    title: 'Union & State Finance Portal',
+    titleHi: 'केन्द्रीय एवं राज्य वित्त पोर्टल',
+    description: 'Official portal for verified public budget allocations, economic surveys and state expenditure accounts.',
+    descriptionHi: 'सत्यापित बजट आवंटन, आर्थिक सर्वेक्षण और राज्य व्यय खातों हेतु आधिकारिक पोर्टल।',
+    url: 'https://indiabudget.gov.in',
+    authority: 'Ministry of Finance, Govt of India',
+    authorityHi: 'वित्त मंत्रालय, भारत सरकार',
+    verified: true,
+  },
+  {
+    id: 'src-budget-2',
+    title: 'Comptroller and Auditor General (CAG) Reports',
+    titleHi: 'नियंत्रक एवं महालेखापरीक्षक (CAG) रिपोर्ट',
+    description: 'Statutory public audit reports inspecting state department allocations and financial compliance.',
+    descriptionHi: 'सरकारी विभागों के वित्तीय आवंटन और अनुपालन का निरीक्षण करने वाली CAG ऑडिट रिपोर्ट।',
+    url: 'https://cag.gov.in',
+    authority: 'CAG of India',
+    authorityHi: 'भारत के नियन्त्रक-महालेखापरीक्षक',
+    verified: true,
+  },
+];

@@ -1,0 +1,56 @@
+/* M08 Global Typography System */
+
+.font-sans-fallback {
+  font-family: 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+}
+
+.font-hindi-fallback {
+  font-family: 'Mukta', 'Noto Sans Devanagari', 'Inter', sans-serif;
+}
+
+.heading-display {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.heading-h1 {
+  font-size: clamp(1.875rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.heading-h2 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.heading-h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.body-large {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.body-base {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.body-small {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.caption-text {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}

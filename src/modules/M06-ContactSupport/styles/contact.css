@@ -1,0 +1,33 @@
+/* M06 Contact & Support Custom Styles */
+
+.contact-hero-gradient {
+  background: linear-gradient(135deg, #091e42 0%, #1e1b4b 60%, #b45309 100%);
+}
+
+.helpline-glow-card {
+  box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.2);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+}
+
+.accordion-trigger {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-trigger:hover {
+  background-color: #f8fafc;
+}
+
+.accordion-panel {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.625;
+}

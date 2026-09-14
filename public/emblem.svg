@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <!-- Outer Gold Laurel Circle Ring -->
+  <circle cx="50" cy="50" r="46" fill="#1E3A8A" stroke="#D97706" stroke-width="3"/>
+  <circle cx="50" cy="50" r="41" stroke="#F59E0B" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- Inner Crest Background -->
+  <circle cx="50" cy="50" r="36" fill="#172554"/>
+
+  <!-- Civic Pillar / Scale of Justice Graphic -->
+  <!-- Central Pillar -->
+  <path d="M48 24H52V62H48V24Z" fill="#F59E0B"/>
+  <path d="M44 62H56V66H44V62Z" fill="#D97706"/>
+  <path d="M42 66H58V70H42V66Z" fill="#F59E0B"/>
+
+  <!-- Scale Crossbar -->
+  <path d="M26 34H74V37H26V34Z" fill="#F59E0B"/>
+
+  <!-- Left Scale Pan -->
+  <path d="M26 37L20 48H32L26 37Z" fill="none" stroke="#D97706" stroke-width="1.5"/>
+  <path d="M18 48H34C34 52.4 30.4 56 26 56C21.6 56 18 52.4 18 48Z" fill="#F59E0B" fill-opacity="0.8"/>
+
+  <!-- Right Scale Pan -->
+  <path d="M74 37L68 48H80L74 37Z" fill="none" stroke="#D97706" stroke-width="1.5"/>
+  <path d="M66 48H82C82 52.4 78.4 56 74 56C69.6 56 66 52.4 66 48Z" fill="#F59E0B" fill-opacity="0.8"/>
+
+  <!-- Emblem Star Badge at top -->
+  <polygon points="50,14 53,20 60,20 54,24 57,30 50,26 43,30 46,24 40,20 47,20" fill="#DC2626"/>
+</svg>

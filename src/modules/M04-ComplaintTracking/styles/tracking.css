@@ -1,0 +1,65 @@
+/* M04 Complaint Tracking Module Custom Styles */
+
+.tracking-hero-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0284c7 100%);
+}
+
+.tracking-notice-glass {
+  background: rgba(254, 243, 199, 0.85);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+}
+
+.tracking-timeline-line {
+  position: absolute;
+  left: 1.25rem;
+  top: 1.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background-color: #e2e8f0;
+}
+
+.tracking-timeline-node {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+
+.tracking-node-completed {
+  background-color: #059669;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px #d1fae5;
+}
+
+.tracking-node-active {
+  background-color: #d97706;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px #fef3c7;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.tracking-node-pending {
+  background-color: #f1f5f9;
+  color: #64748b;
+  border: 2px dashed #cbd5e1;
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0.1);
+  }
+}
+
+.tracking-card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+}
