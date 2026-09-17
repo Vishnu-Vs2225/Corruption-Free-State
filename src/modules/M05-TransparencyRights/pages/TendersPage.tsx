@@ -6,15 +6,15 @@ import { ProcurementProcess } from '../components/ProcurementProcess';
 import { TenderSearch } from '../components/TenderSearch';
 import { TenderCard } from '../components/TenderCard';
 import { OfficialSourceCard } from '../components/OfficialSourceCard';
-import { TENDER_DEMO_ITEMS, TENDER_OFFICIAL_SOURCES } from '../data/tenders';
+import { TENDER_ITEMS, TENDER_OFFICIAL_SOURCES } from '../data/tenders';
 import { FileSpreadsheet } from 'lucide-react';
 
 export const TendersPage: React.FC = () => {
   const { language, t } = useLanguage();
-  const [tendersList, setTendersList] = useState(TENDER_DEMO_ITEMS);
+  const [tendersList, setTendersList] = useState(TENDER_ITEMS);
 
   const handleSearch = (query: string, category: string) => {
-    let filtered = TENDER_DEMO_ITEMS;
+    let filtered = TENDER_ITEMS;
 
     if (query.trim()) {
       const q = query.toLowerCase();
@@ -64,13 +64,13 @@ export const TendersPage: React.FC = () => {
 
         <TenderSearch onSearchSubmit={handleSearch} />
 
-        {/* DEMO TENDERS RESULT */}
+        {/* TENDERS RESULT */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-black text-blue-950 uppercase tracking-tight">
-              {language === 'hi' ? 'नमूना निविदा रिकॉर्ड्स' : 'Sample Tender Records'}
+              {language === 'hi' ? 'सक्रिय निविदा रिकॉर्ड्स' : 'Active Tender Records'}
             </h2>
-            <span className="text-xs font-mono text-slate-500">{tendersList.length} DEMO ITEMS FOUND</span>
+            <span className="text-xs font-mono text-slate-500">{tendersList.length} TENDER RECORDS FOUND</span>
           </div>
 
           {tendersList.length > 0 ? (
@@ -83,8 +83,8 @@ export const TendersPage: React.FC = () => {
             <div className="p-8 bg-white border border-slate-200 rounded-2xl text-center space-y-2">
               <p className="text-xs text-slate-600 font-sans">
                 {language === 'hi'
-                  ? 'कोई भी नमूना निविदा रिकॉर्ड नहीं मिला। यह एक स्टैटिक डेमो है।'
-                  : 'No tender records match your filter criteria in this static demo dataset.'}
+                  ? 'कोई निविदा रिकॉर्ड नहीं मिला।'
+                  : 'No tender records match your filter criteria.'}
               </p>
             </div>
           )}

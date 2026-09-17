@@ -52,19 +52,19 @@ export const TrackingHelp: React.FC = () => {
 
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <Link
-            to="/report-corruption/guidelines"
+            to="/citizen-rights"
             className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-xl transition-colors"
           >
             <FileText className="w-4 h-4 text-blue-900" />
-            <span>{language === 'hi' ? 'रिपोर्टिंग दिशानिर्देश' : 'Reporting Guidelines'}</span>
+            <span>{language === 'hi' ? 'नागरिक अधिकार' : 'Citizen Rights'}</span>
           </Link>
 
           <Link
-            to="/report-corruption"
+            to="/contact"
             className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-blue-950 hover:bg-blue-900 text-white text-xs font-bold rounded-xl transition-colors"
           >
             <Send className="w-3.5 h-3.5 text-amber-400" />
-            <span>{language === 'hi' ? 'शिकायत दर्ज करें' : 'Report Corruption'}</span>
+            <span>{language === 'hi' ? 'संपर्क करें' : 'Contact Support'}</span>
           </Link>
         </div>
       </div>

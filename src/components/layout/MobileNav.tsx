@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageSwitcher } from '../common/LanguageSwitcher';
-import { X, AlertTriangle } from 'lucide-react';
+import { X } from 'lucide-react';
 
 export interface MobileNavProps {
   isOpen: boolean;
@@ -36,13 +36,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
   const navItems = [
     { path: '/', labelKey: 'nav.home' },
     { path: '/about', labelKey: 'nav.about' },
-    { path: '/report-corruption', labelKey: 'nav.report' },
-    { path: '/track-complaint', labelKey: 'nav.track' },
-    { path: '/transparency', labelKey: 'nav.transparency' },
     { path: '/citizen-rights', labelKey: 'nav.citizenRights' },
-    { path: '/whistleblower-protection', labelKey: 'nav.whistleblower' },
-    { path: '/awareness', labelKey: 'nav.awareness' },
-    { path: '/news', labelKey: 'nav.news' },
     { path: '/faq', labelKey: 'nav.faq' },
     { path: '/contact', labelKey: 'nav.contact' },
   ];
@@ -86,7 +80,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
                   to={item.path}
                   onClick={onClose}
                   aria-current={isActive ? 'page' : undefined}
-                  className={`px-4 py-2.5 rounded text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-between ${
+                  className={`px-4 py-3 rounded text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-between ${
                     isActive ? 'bg-amber-500 text-slate-950 font-extrabold' : 'text-slate-200 hover:bg-blue-900'
                   }`}
                 >
@@ -98,21 +92,12 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
           </nav>
         </div>
 
-        {/* BOTTOM LANGUAGE & REPORT CTA */}
+        {/* BOTTOM LANGUAGE SWITCHER */}
         <div className="pt-6 border-t border-blue-900 space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs text-slate-400 font-mono">LANGUAGE:</span>
+            <span className="text-xs text-slate-400 font-mono uppercase">LANGUAGE:</span>
             <LanguageSwitcher />
           </div>
-
-          <Link
-            to="/report-corruption"
-            onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 py-3.5 bg-red-700 hover:bg-red-800 text-white font-bold text-xs uppercase tracking-wider rounded-lg shadow-lg"
-          >
-            <AlertTriangle className="w-4 h-4 text-amber-300" />
-            <span>{t('nav.reportCTA')}</span>
-          </Link>
         </div>
       </div>
     </div>

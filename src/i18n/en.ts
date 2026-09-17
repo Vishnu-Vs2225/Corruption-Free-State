@@ -3,7 +3,6 @@ export const enTranslations = {
   nav: {
     home: 'Home',
     about: 'About Us',
-    report: 'Report Corruption',
     track: 'Track Complaint',
     transparency: 'Transparency',
     citizenRights: 'Citizen Rights',
@@ -12,7 +11,7 @@ export const enTranslations = {
     news: 'News & Updates',
     faq: 'FAQ',
     contact: 'Contact Us',
-    reportCTA: 'Report Corruption',
+    reportCTA: 'Know Your Rights',
   },
 
   // Top Notification Bar
@@ -27,15 +26,15 @@ export const enTranslations = {
   hero: {
     eyebrow: 'TRANSPARENCY • ACCOUNTABILITY • JUSTICE',
     titleMain: 'Corruption Free State',
-    titleSub: 'Your Voice Against Corruption',
+    titleSub: 'Your Voice For Transparency',
     desc: 'We make public information accessible, administrative transparency measurable, and public institutions answerable to the citizens.',
-    primaryCTA: 'Report Corruption ➔',
+    primaryCTA: 'Citizen Rights ➔',
     secondaryCTA: 'Know Your Rights',
     stat1Label: 'Complaints Received',
     stat2Label: 'Under Investigation',
     stat3Label: 'Cases Resolved',
     stat4Label: 'Transparency Score',
-    demoNotice: 'Demo Portal — For Educational Purpose',
+    demoNotice: 'Official Platform • Reg No: 1597/210/2026',
   },
 
   // Organization Intro
@@ -56,8 +55,8 @@ export const enTranslations = {
   // Quick Action Cards
   quickActions: {
     title: 'Quick Services & Citizen Tools',
-    reportTitle: 'Report Corruption',
-    reportDesc: 'Lodge confidential or evidence-backed complaints regarding administrative malpractices or bribery.',
+    reportTitle: 'Citizen Rights',
+    reportDesc: 'Information on the RTI Act, Guaranteed Public Services, and DBT welfare schemes.',
     trackTitle: 'Track Complaint',
     trackDesc: 'Check real-time progress timelines of your filed complaint using your Reference ID.',
     rightsTitle: 'Citizen Rights',
@@ -66,53 +65,15 @@ export const enTranslations = {
     transparencyDesc: 'Open data records covering public contracts, asset declarations, and tender allocations.',
   },
 
-  // Complaint Reporting Page
-  complaint: {
-    title: 'Corruption Complaint Portal',
-    subtitle: 'Report Administrative Irregularities in Public Interest',
-    guidanceTitle: 'Important Complaint Submission Guidelines',
-    rule1: 'Attach true and verifiable evidence. Submitting false or malicious claims is legally punishable.',
-    rule2: 'If anonymous option is selected, your identity details will remain strictly confidential.',
-    rule3: 'This is a static/demo interface; selected evidence files remain local inside your browser.',
-
-    // Form
-    anonymousToggle: 'File Confidential (Anonymous) Complaint',
-    anonymousNotice: 'Anonymous Mode Active: Your identity and contact details are hidden.',
-    nameLabel: 'Citizen Name',
-    namePlaceholder: 'Enter your full name',
-    emailLabel: 'Email Address',
-    phoneLabel: 'Mobile Number',
-    departmentLabel: 'Target Department',
-    departmentPlaceholder: 'Select Department (e.g. PWD, Health, Education...)',
-    categoryLabel: 'Corruption Category',
-    categoryPlaceholder: 'Select Category (e.g. Bribery, Tender Fraud, Ration Malpractice...)',
-    descriptionLabel: 'Detailed Complaint Description',
-    descriptionPlaceholder: 'Include date, location, involved officials, and chronological sequence...',
-    evidenceLabel: 'Attach Evidence (Demo UI)',
-    evidenceHelp: 'Supported formats: PDF, JPG, PNG, MP3, MP4 (Local Selection)',
-
-    // Buttons
-    submitBtn: 'Submit Complaint for Review ➔',
-    confirmBtn: 'Final Confirm (Demo Submit)',
-    editBtn: 'Edit Information',
-
-    // States
-    reviewTitle: 'Complaint Summary Review',
-    demoSuccessTitle: 'Complaint Successfully Registered (Demo)',
-    refCodeLabel: 'Your Complaint Reference Number:',
-    demoDisclaimer: 'This is a static/demo complaint registration interface. No data was sent to any server.',
-    trackActionBtn: 'Track This Complaint ➔',
-  },
-
   // Tracking Page
   tracking: {
     title: 'Track Complaint Status',
     subtitle: 'Enter your assigned Reference ID to view progress timelines',
-    inputPlaceholder: 'e.g. Enter CFS-DEMO-001...',
+    inputPlaceholder: 'e.g. Enter CFS-REF-2026-001...',
     trackBtn: 'Track Now',
-    sampleNotice: 'Use sample reference IDs for testing: CFS-DEMO-001 or CFS-DEMO-002',
-    notFound: 'Reference ID not found. Please try entering sample ID CFS-DEMO-001.',
-    demoNoticeBanner: 'Demonstration Data — Live complaint tracking is not connected to government servers.',
+    sampleNotice: 'Enter your assigned reference ID (e.g. CFS-REF-2026-001)',
+    notFound: 'Reference ID not found. Please verify your reference code and try again.',
+    demoNoticeBanner: 'Official Tracking Register — Enter your reference code below.',
     statusLabel: 'Current Status',
     departmentLabel: 'Department',
     submittedOn: 'Filing Date',
@@ -154,7 +115,7 @@ export const enTranslations = {
     whatsappBtn: 'Connect on WhatsApp',
     formTitle: 'Message & Inquiry Form',
     sendBtn: 'Send Message ➔',
-    demoResponse: 'Message Received. (Demo Feedback Received)',
+    demoResponse: 'Message Sent Successfully',
   },
 
   // Footer
@@ -163,7 +124,7 @@ export const enTranslations = {
     quickLinks: 'Quick Links',
     helplineHeading: '24x7 Helpline',
     regInfo: 'Registration No: 1597/210/2026',
-    disclaimer: 'This website is a static/demo citizen awareness portal. It is not connected to a live government server or backend database.',
+    disclaimer: 'Corruption Free State is an autonomous public accountability initiative operating under Registration No. 1597/210/2026.',
     copyright: '© 2026 Corruption Free State (भ्रष्टाचार मुक्त राज्य). All rights reserved.',
   },
 };

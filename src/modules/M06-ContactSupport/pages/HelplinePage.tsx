@@ -17,7 +17,7 @@ export const HelplinePage: React.FC = () => {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="contact-hero-gradient text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-amber-500/20 border border-amber-500/40 rounded-full text-xs font-bold text-amber-300">
             <PhoneCall className="w-4 h-4 text-amber-400" />
             <span>24x7 CITIZEN HELPLINE</span>
@@ -29,8 +29,8 @@ export const HelplinePage: React.FC = () => {
 
           <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
             {language === 'hi'
-              ? 'भ्रष्टाचार, रिश्वतखोरी तथा सार्वजनिक शिकायत संबंधी मार्गदर्शन के लिए हेल्पलाइन नंबर पर संपर्क करें।'
-              : 'Direct citizen hotline for assistance, corruption reporting guidance, and inquiry support.'}
+              ? 'नागरिक अधिकार, RTI प्रक्रिया तथा सार्वजनिक सेवाओं में मार्गदर्शन के लिए हेल्पलाइन नंबर पर संपर्क करें।'
+              : 'Direct citizen hotline for assistance, RTI application guidance, and public service inquiry support.'}
           </p>
         </div>
       </section>

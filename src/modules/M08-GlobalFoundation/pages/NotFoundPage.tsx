@@ -12,7 +12,7 @@ export const NotFoundPage: React.FC = () => {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/awareness?q=${encodeURIComponent(searchQuery.trim())}#search`);
+      navigate(`/faq?q=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 
@@ -76,29 +76,29 @@ export const NotFoundPage: React.FC = () => {
             <Home className="w-5 h-5 text-blue-600 shrink-0" />
             <div>
               <div>{language === 'hi' ? 'मुख्य पृष्ठ' : 'Homepage'}</div>
-              <div className="text-[11px] font-normal text-slate-500">Return to the central portal portal</div>
+              <div className="text-[11px] font-normal text-slate-500">Return to the central portal home</div>
             </div>
           </Link>
 
           <Link
-            to="/report-corruption"
-            className="p-3.5 rounded-xl border border-slate-200 hover:border-red-400 hover:bg-red-50/30 flex items-center gap-3 transition-colors text-slate-800"
-          >
-            <AlertTriangle className="w-5 h-5 text-red-600 shrink-0" />
-            <div>
-              <div>{language === 'hi' ? 'भ्रष्टाचार दर्ज करें' : 'Report Corruption'}</div>
-              <div className="text-[11px] font-normal text-slate-500">File a citizen grievance report</div>
-            </div>
-          </Link>
-
-          <Link
-            to="/track-complaint"
+            to="/citizen-rights"
             className="p-3.5 rounded-xl border border-slate-200 hover:border-emerald-400 hover:bg-emerald-50/30 flex items-center gap-3 transition-colors text-slate-800"
           >
-            <Search className="w-5 h-5 text-emerald-600 shrink-0" />
+            <AlertTriangle className="w-5 h-5 text-emerald-600 shrink-0" />
             <div>
-              <div>{language === 'hi' ? 'शिकायत की स्थिति जांचें' : 'Track Complaint Status'}</div>
-              <div className="text-[11px] font-normal text-slate-500">Check reference status</div>
+              <div>{language === 'hi' ? 'नागरिक अधिकार' : 'Citizen Rights'}</div>
+              <div className="text-[11px] font-normal text-slate-500">View RTI and citizen charter info</div>
+            </div>
+          </Link>
+
+          <Link
+            to="/faq"
+            className="p-3.5 rounded-xl border border-slate-200 hover:border-amber-400 hover:bg-amber-50/30 flex items-center gap-3 transition-colors text-slate-800"
+          >
+            <Search className="w-5 h-5 text-amber-600 shrink-0" />
+            <div>
+              <div>{language === 'hi' ? 'प्रश्नोत्तरी (FAQ)' : 'FAQ & Knowledge'}</div>
+              <div className="text-[11px] font-normal text-slate-500">Frequently asked questions</div>
             </div>
           </Link>
 

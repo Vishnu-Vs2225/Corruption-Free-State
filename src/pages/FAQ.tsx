@@ -29,7 +29,7 @@ export const FAQ: React.FC = () => {
 
       {/* HEADER BANNER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-blue-950 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/40 rounded text-xs font-bold text-amber-300">
             <HelpCircle className="w-4 h-4 text-amber-400" />
             <span>{t('nav.faq')}</span>
@@ -41,8 +41,8 @@ export const FAQ: React.FC = () => {
 
           <p className="text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
             {language === 'hi'
-              ? 'भ्रष्टाचार शिकायत पंजीकरण, गुप्त रिपोर्टिंग, व्हिसलब्लोअर सुरक्षा और RTI से संबंधित बहुप्रचलित प्रश्नों के उत्तर।'
-              : 'Frequently asked questions regarding complaint filing, whistleblower confidentiality, RTI, and civic rights.'}
+              ? 'नागरिक अधिकारों, RTI प्रक्रियाओं, व्हिसलब्लोअर सुरक्षा और पारदर्शिता से संबंधित बहुप्रचलित प्रश्नों के उत्तर।'
+              : 'Frequently asked questions regarding citizen rights, RTI procedures, whistleblower protections, and public transparency.'}
           </p>
         </div>
       </section>
@@ -73,12 +73,12 @@ export const FAQ: React.FC = () => {
             {language === 'hi' ? 'सभी प्रश्न' : 'All FAQs'}
           </button>
           <button
-            onClick={() => setSelectedCategory('reporting')}
+            onClick={() => setSelectedCategory('rights')}
             className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-colors ${
-              selectedCategory === 'reporting' ? 'bg-blue-950 text-amber-400' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+              selectedCategory === 'rights' ? 'bg-blue-950 text-amber-400' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
             }`}
           >
-            {language === 'hi' ? 'शिकायत प्रक्रिया' : 'Reporting'}
+            {language === 'hi' ? 'नागरिक अधिकार' : 'Citizen Rights'}
           </button>
           <button
             onClick={() => setSelectedCategory('whistleblower')}

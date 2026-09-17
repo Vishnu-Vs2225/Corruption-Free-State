@@ -15,16 +15,6 @@ export const ROUTE_METADATA: Record<string, RouteMetadata> = {
     description: 'Learn about our vision, mission, core objectives, and statutory registration info.',
     canonical: '/about',
   },
-  '/report-corruption': {
-    title: 'Report Corruption | Corruption Free State',
-    description: 'File confidential or evidence-backed complaints regarding administrative malpractices or bribery.',
-    canonical: '/report-corruption',
-  },
-  '/report-corruption/guidelines': {
-    title: 'Reporting Guidelines | Corruption Free State',
-    description: 'Important guidelines for submitting evidence and confidential reports.',
-    canonical: '/report-corruption/guidelines',
-  },
   '/track-complaint': {
     title: 'Track Complaint Status | Corruption Free State',
     description: 'Enter your complaint reference code to view progress timelines and status badges.',

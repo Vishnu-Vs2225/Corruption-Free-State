@@ -38,11 +38,11 @@ export const RTI_STEPS: RTIStep[] = [
   },
 ];
 
-export const CITIZEN_CHARTER_DEMO: CitizenCharterItem[] = [
+export const CITIZEN_CHARTER_ITEMS: CitizenCharterItem[] = [
   {
     id: 'cc-1',
-    service: 'Issuance of Income Certificate (Sample)',
-    serviceHi: 'आय प्रमाण पत्र जारी करना (नमूना)',
+    service: 'Issuance of Income Certificate',
+    serviceHi: 'आय प्रमाण पत्र जारी करना',
     timeline: '15 Working Days',
     timelineHi: '15 कार्य दिवस',
     office: 'Tehsildar / Sub-Divisional Officer',
@@ -52,8 +52,8 @@ export const CITIZEN_CHARTER_DEMO: CitizenCharterItem[] = [
   },
   {
     id: 'cc-2',
-    service: 'New Ration Card Registration (Sample)',
-    serviceHi: 'नया राशन कार्ड पंजीकरण (नमूना)',
+    service: 'New Ration Card Registration',
+    serviceHi: 'नया राशन कार्ड पंजीकरण',
     timeline: '30 Working Days',
     timelineHi: '30 कार्य दिवस',
     office: 'District Food & Civil Supplies Office',
@@ -63,8 +63,8 @@ export const CITIZEN_CHARTER_DEMO: CitizenCharterItem[] = [
   },
   {
     id: 'cc-3',
-    service: 'Residential Building Plan Sanction (Sample)',
-    serviceHi: 'आवासीय भवन नक्शा स्वीकृति (नमूना)',
+    service: 'Residential Building Plan Sanction',
+    serviceHi: 'आवासीय भवन नक्शा स्वीकृति',
     timeline: '30 Working Days',
     timelineHi: '30 कार्य दिवस',
     office: 'Municipal Corporation / Town Planning',
@@ -73,6 +73,8 @@ export const CITIZEN_CHARTER_DEMO: CitizenCharterItem[] = [
     sourceHi: 'आधिकारिक लोक सेवा गारंटी अधिनियम',
   },
 ];
+
+export const CITIZEN_CHARTER_DEMO = CITIZEN_CHARTER_ITEMS;
 
 export const RIGHTS_OFFICIAL_SOURCES: OfficialSource[] = [
   {

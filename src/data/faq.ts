@@ -1,6 +1,6 @@
 export interface FAQItem {
   id: string;
-  category: 'reporting' | 'tracking' | 'whistleblower' | 'rti' | 'general';
+  category: 'rights' | 'tracking' | 'whistleblower' | 'rti' | 'general';
   categoryLabel: { hi: string; en: string };
   question: { hi: string; en: string };
   answer: { hi: string; en: string };
@@ -9,15 +9,15 @@ export interface FAQItem {
 export const faqList: FAQItem[] = [
   {
     id: 'FAQ-01',
-    category: 'reporting',
-    categoryLabel: { hi: 'शिकायत प्रक्रिया', en: 'Complaint Reporting' },
+    category: 'rights',
+    categoryLabel: { hi: 'नागरिक अधिकार', en: 'Citizen Rights' },
     question: {
-      hi: 'भ्रष्टाचार की शिकायत दर्ज कराने के लिए किन साक्ष्यों की आवश्यकता होती है?',
-      en: 'What evidence is required to lodge a corruption complaint?',
+      hi: 'नागरिक अधिकार पत्र (Citizen Charter) के तहत कौन सी सेवाएं मिलती हैं?',
+      en: 'What services are covered under the Citizen Charter framework?',
     },
     answer: {
-      hi: 'साक्ष्यों में आधिकारिक पत्राचार, ऑडियो/वीडियो रिकॉर्डिंग, बैंक ट्रांसमिशन रसीदें, या निविधा दस्तावेज शामिल हो सकते हैं। ध्यान रखें कि साक्ष्य वैध और सत्य होने चाहिए।',
-      en: 'Evidence may include official correspondence, audio/video clips, bank transaction receipts, or tender documents. All evidence provided must be authentic and verifiable.',
+      hi: 'नागरिक अधिकार पत्र राशन कार्ड, प्रमाण पत्र, और सार्वजनिक उपयोगिता सेवाओं की समयबद्ध डिलीवरी सुनिश्चित करता है।',
+      en: 'The Citizen Charter guarantees time-bound delivery of essential public services including certificates, licenses, and utility support.',
     },
   },
   {
@@ -25,12 +25,12 @@ export const faqList: FAQItem[] = [
     category: 'whistleblower',
     categoryLabel: { hi: 'व्हिसलब्लोअर सुरक्षा', en: 'Whistleblower Safety' },
     question: {
-      hi: 'क्या मैं अपनी पहचान उजागर किए बिना (गुमनाम) शिकायत दर्ज कर सकता हूँ?',
-      en: 'Can I report corruption anonymously without disclosing my identity?',
+      hi: 'व्हिसलब्लोअर संरक्षण अधिनियम, 2014 के तहत क्या अधिकार हैं?',
+      en: 'What legal rights are provided under Whistleblowers Protection Act 2014?',
     },
     answer: {
-      hi: 'हाँ, पोर्टल पर गोपनीय/गुमनाम रिपोर्टिंग का विकल्प उपलब्ध है। आपकी पहचान पूरी तरह से सुरक्षित रखी जाती है और किसी भी प्रशासनिक स्तर पर उजागर नहीं की जाती।',
-      en: 'Yes, anonymous reporting options are supported. Your identity remains strictly confidential and is protected under anti-corruption whistleblower frameworks.',
+      hi: 'कानून के तहत नागरिक की पहचान को पूरी तरह से सुरक्षित रखी जाती है और किसी भी प्रशासनिक उत्पीड़न के खिलाफ संस्थागत सुरक्षा मिलती है।',
+      en: 'Statutory provisions ensure total identity confidentiality and legal immunity against harassment for public-interest disclosures.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const faqList: FAQItem[] = [
     category: 'tracking',
     categoryLabel: { hi: 'शिकायत ट्रैकिंग', en: 'Complaint Tracking' },
     question: {
-      hi: 'शिकायत दर्ज करने के बाद उसकी स्थिति (Status) कैसे ट्रैक करें?',
+      hi: 'शिकायत दर्ज होने के बाद उसकी स्थिति (Status) कैसे ट्रैक करें?',
       en: 'How do I track the status of my complaint after submission?',
     },
     answer: {

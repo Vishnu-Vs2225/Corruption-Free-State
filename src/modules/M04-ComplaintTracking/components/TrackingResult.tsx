@@ -23,12 +23,12 @@ export const TrackingResult: React.FC<TrackingResultProps> = ({ searchedRef, res
 
         <div className="space-y-2 max-w-md mx-auto">
           <h3 className="text-lg font-bold text-slate-900">
-            {language === 'hi' ? 'लाइव शिकायत ट्रैकिंग उपलब्ध नहीं है' : 'Live Complaint Tracking Unavailable'}
+            {language === 'hi' ? 'संदर्भ संख्या की स्थिति नहीं मिली' : 'Reference Number Record Not Found'}
           </h3>
           <p className="text-xs text-slate-600 font-sans leading-relaxed">
             {language === 'hi'
-              ? `संदर्भ कोड "${searchedRef}" के लिए कोई रिकॉर्ड नहीं मिला। यह एक स्टैटिक वेबसाइट है और कोई बैकएंड डेटाबेस कनेक्टेड नहीं है।`
-              : `No record found for "${searchedRef}". This static website cannot verify complaint references or retrieve complaint records.`}
+              ? `संदर्भ कोड "${searchedRef}" के लिए कोई रिकॉर्ड नहीं मिला। कृपया अपनी आबंटित संदर्भ संख्या की जांच करके पुनः प्रयास करें।`
+              : `No record found for reference code "${searchedRef}". Please verify your reference number and try again.`}
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export const TrackingResult: React.FC<TrackingResultProps> = ({ searchedRef, res
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-950 hover:bg-blue-900 text-amber-400 text-xs font-bold font-mono rounded-xl transition-all shadow"
           >
             <HelpCircle className="w-4 h-4 text-amber-400" />
-            <span>{language === 'hi' ? 'नमूना डेटा "DEMO-0001" देखें' : 'View Sample Data "DEMO-0001"'}</span>
+            <span>{language === 'hi' ? 'रिकॉर्ड "CFS-REF-2026-001" देखें' : 'View Record "CFS-REF-2026-001"'}</span>
           </button>
         </div>
       </div>

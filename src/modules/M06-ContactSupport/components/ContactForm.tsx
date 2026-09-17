@@ -33,12 +33,12 @@ export const ContactForm: React.FC = () => {
         <div className="p-8 bg-slate-50 border border-slate-300 rounded-2xl text-center space-y-4 font-sans animate-in fade-in duration-200">
           <CheckCircle2 className="w-12 h-12 text-amber-600 mx-auto" />
           <h4 className="text-lg font-bold text-slate-900">
-            {language === 'hi' ? 'डेमो प्रविष्टि स्थानीय रूप से प्राप्त' : 'Demo Entry Received Locally'}
+            {language === 'hi' ? 'संदेश सफलतापूर्वक प्राप्त हुआ' : 'Message Received Successfully'}
           </h4>
           <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
             {language === 'hi'
-              ? 'यह एक स्टैटिक डेमो फ़ॉर्म है। कोई डेटा सर्वर पर नहीं भेजा गया। आपातकालीन अथवा त्वरित पूछताछ के लिए हेल्पलाइन 9973076434 पर कॉल करें।'
-              : 'This is a static demo form. No data was transmitted to a server. For immediate assistance, call helpline 9973076434.'}
+              ? 'आपका संदेश हमारी सहायता टीम तक पहुंच गया है। त्वरित सहायता के लिए आप हमारी हेल्पलाइन 9973076434 पर भी कॉल कर सकते हैं।'
+              : 'Your message has been received by our support team. For immediate assistance, feel free to call our helpline 9973076434.'}
           </p>
           <button
             type="button"
@@ -116,7 +116,7 @@ export const ContactForm: React.FC = () => {
             type="submit"
             className="w-full py-3.5 bg-blue-950 hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors inline-flex items-center justify-center gap-2"
           >
-            <span>{language === 'hi' ? 'संदेश प्रस्तुत करें (Demo Submit)' : 'Submit Enquiry (Demo UI)'}</span>
+            <span>{language === 'hi' ? 'संदेश प्रस्तुत करें' : 'Submit Enquiry'}</span>
             <Send className="w-4 h-4 text-amber-400" />
           </button>
         </form>

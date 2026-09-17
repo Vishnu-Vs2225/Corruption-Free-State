@@ -28,18 +28,18 @@ export const DOS_ITEMS: DoDontItem[] = [
   {
     id: 'do-4',
     type: 'do',
-    textEn: 'Use Designated Official Complaint Channels',
-    textHi: 'निर्धारित आधिकारिक शिकायत चैनलों का उपयोग करें',
-    explanationEn: 'Submit your report through the official complaint portal or anti-corruption helpline (9973076434).',
-    explanationHi: 'आधिकारिक शिकायत पोर्टल या एंटी-करप्शन हेल्पलाइन (9973076434) के माध्यम से रिपोर्ट प्रस्तुत करें।',
+    textEn: 'Seek Support Via Official Anti-Corruption Helpline',
+    textHi: 'आधिकारिक एंटी-करप्शन हेल्पलाइन के माध्यम से सहायता प्राप्त करें',
+    explanationEn: 'Contact our official helpline (9973076434) for advice on citizen rights and statutory procedures.',
+    explanationHi: 'नागरिक अधिकारों एवं वैधानिक प्रक्रियाओं पर सलाह के लिए हमारी आधिकारिक हेल्पलाइन (9973076434) पर संपर्क करें।',
   },
   {
     id: 'do-5',
     type: 'do',
-    textEn: 'Retain Assigned Complaint Reference Numbers',
-    textHi: 'आबंटित शिकायत संदर्भ नंबर सुरक्षित रखें',
-    explanationEn: 'Keep your reference ID (e.g. DEMO-0001) confidential and safe for future tracking.',
-    explanationHi: 'भविष्य की ट्रैकिंग के लिए अपनी संदर्भ संख्या (जैसे DEMO-0001) को सुरक्षित रखें।',
+    textEn: 'Retain Application Acknowledgement Slips',
+    textHi: 'आवेदन पावती रसीद सुरक्षित रखें',
+    explanationEn: 'Keep your application acknowledgment slips confidential and safe for future reference.',
+    explanationHi: 'भविष्य के संदर्भ के लिए अपनी आवेदन पावती रसीद सुरक्षित रखें।',
   },
 ];
 
@@ -81,7 +81,7 @@ export const DONTS_ITEMS: DoDontItem[] = [
     type: 'dont',
     textEn: "Don't Pay Illegal Gratification Under Pressure",
     textHi: 'दबाव में आकर अवैध रिश्वत राशि का भुगतान न करें',
-    explanationEn: 'Refuse improper demands and immediately report the incident through designated channels.',
-    explanationHi: 'अनुचित मांगों को अस्वीकार करें और निर्धारित माध्यमों से तुरंत घटना की रिपोर्ट करें।',
+    explanationEn: 'Refuse improper demands and seek immediate advice through official helpline channels.',
+    explanationHi: 'अनुचित मांगों को अस्वीकार करें और आधिकारिक हेल्पलाइन माध्यमों से तुरंत सलाह लें।',
   },
 ];

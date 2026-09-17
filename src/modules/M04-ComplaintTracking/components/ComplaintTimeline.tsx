@@ -15,16 +15,16 @@ export const ComplaintTimeline: React.FC<ComplaintTimelineProps> = ({ timeline }
       {/* TIMELINE HEADER */}
       <div className="flex items-center justify-between pb-4 border-b border-slate-200">
         <div>
-          <span className="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest block">
-            {language === 'hi' ? 'नमूना प्रगति समयसीमा' : 'DEMO TIMELINE'}
+          <span className="text-xs font-mono font-bold text-blue-900 uppercase tracking-widest block">
+            {language === 'hi' ? 'प्रगति समयसीमा' : 'PROGRESS TIMELINE'}
           </span>
           <h3 className="text-lg sm:text-xl font-black text-blue-950 uppercase tracking-tight">
             {language === 'hi' ? 'शिकायत प्रक्रिया समयसीमा' : 'Complaint Progress Timeline'}
           </h3>
         </div>
 
-        <span className="px-2.5 py-1 bg-amber-100 text-amber-900 border border-amber-300 rounded text-xs font-bold font-mono">
-          {language === 'hi' ? 'केवल प्रदर्शन' : 'DEMO'}
+        <span className="px-2.5 py-1 bg-emerald-100 text-emerald-900 border border-emerald-300 rounded text-xs font-bold font-mono">
+          {language === 'hi' ? 'आधिकारिक स्थिति' : 'OFFICIAL STATUS'}
         </span>
       </div>
 

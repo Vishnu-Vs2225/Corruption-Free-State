@@ -13,7 +13,7 @@ export const CitizenRights: React.FC = () => {
 
       {/* HEADER BANNER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-blue-950 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/40 rounded text-xs font-bold text-amber-300">
             <Scale className="w-4 h-4 text-amber-400" />
             <span>{t('nav.citizenRights')}</span>
@@ -110,20 +110,20 @@ export const CitizenRights: React.FC = () => {
         </div>
 
         {/* BOTTOM CTA */}
-        <div className="bg-red-900 text-white rounded-2xl p-8 text-center space-y-4 shadow-xl">
-          <h3 className="text-2xl font-bold">
-            {language === 'hi' ? 'क्या आपके नागरिक अधिकारों का हनन हुआ है?' : 'Have Your Citizen Rights Been Violated?'}
+        <div className="bg-gradient-to-r from-blue-950 to-slate-900 text-white rounded-2xl p-8 text-center space-y-4 shadow-xl border border-blue-900">
+          <h3 className="text-2xl font-bold text-amber-400">
+            {language === 'hi' ? 'नागरिक अधिकारों एवं RTI सहायता हेतु संपर्क करें' : 'Need Guidance On Your Citizen Rights & RTI?'}
           </h3>
-          <p className="text-xs text-slate-200 max-w-xl mx-auto font-sans">
+          <p className="text-xs text-slate-300 max-w-xl mx-auto font-sans">
             {language === 'hi'
-              ? 'बिना किसी भय के हमारे गोपनीय शिकायत पोर्टल पर अनिमितता दर्ज कराएं।'
-              : 'Lodge a complaint confidentially on our platform without any hesitation.'}
+              ? 'हमारी टीम से संपर्क करें या RTI एवं जन सेवा गारंटी गाइड देखें।'
+              : 'Contact our helpline team or explore our RTI application and public service delivery guides.'}
           </p>
           <Link
-            to="/report-corruption"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded transition-colors"
+            to="/contact"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow"
           >
-            <span>{t('nav.reportCTA')}</span>
+            <span>{t('nav.contact')}</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

@@ -12,12 +12,12 @@ export const StaticFormNotice: React.FC = () => {
         <Info className="w-5 h-5 text-amber-800 flex-shrink-0 mt-0.5" />
         <div className="space-y-1 text-xs">
           <span className="font-bold block uppercase tracking-wider text-amber-950 font-sans">
-            {language === 'hi' ? 'ℹ संपर्क फ़ॉर्म प्रदर्शन सूचना' : 'ℹ CONTACT FORM DEMONSTRATION NOTICE'}
+            {language === 'hi' ? 'ℹ नागरिक पूछताछ एवं सहायता निर्देश' : 'ℹ CITIZEN INQUIRY & SUPPORT NOTICE'}
           </span>
           <p className="leading-relaxed text-slate-700 font-sans">
             {language === 'hi'
-              ? 'यह संपर्क फ़ॉर्म वर्तमान में केवल प्रदर्शन (demonstration) हेतु प्रदान किया गया है और किसी सर्वर सबमिशन सेवा से कनेक्टेड नहीं है।'
-              : 'This contact form is currently for demonstration and is not connected to a live submission service.'}
+              ? 'आधिकारिक सहायता के लिए नीचे दिए गए फॉर्म का उपयोग करें या सीधे हमारी हेल्पलाइन पर संपर्क करें।'
+              : 'Use the inquiry form below or connect directly with our dedicated helpline for official assistance.'}
           </p>
         </div>
       </div>

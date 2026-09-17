@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { organizationData } from '../../../data/organization';
 import { LanguageSwitcher } from '../../../components/common/LanguageSwitcher';
-import { X, ShieldCheck, Phone, AlertTriangle, ChevronRight } from 'lucide-react';
+import { X, ShieldCheck, Phone, ChevronRight } from 'lucide-react';
 import { setupFocusTrap, lockBodyScroll, unlockBodyScroll } from '../utils/a11y';
 
 export interface MobileDrawerNavProps {
@@ -19,13 +19,7 @@ export const MobileDrawerNav: React.FC<MobileDrawerNavProps> = ({ isOpen, onClos
   const navItems = [
     { path: '/', labelKey: 'nav.home' },
     { path: '/about', labelKey: 'nav.about' },
-    { path: '/report-corruption', labelKey: 'nav.report' },
-    { path: '/track-complaint', labelKey: 'nav.track' },
-    { path: '/transparency', labelKey: 'nav.transparency' },
     { path: '/citizen-rights', labelKey: 'nav.citizenRights' },
-    { path: '/whistleblower-protection', labelKey: 'nav.whistleblower' },
-    { path: '/awareness', labelKey: 'nav.awareness' },
-    { path: '/news', labelKey: 'nav.news' },
     { path: '/faq', labelKey: 'nav.faq' },
     { path: '/contact', labelKey: 'nav.contact' },
   ];
@@ -55,7 +49,7 @@ export const MobileDrawerNav: React.FC<MobileDrawerNavProps> = ({ isOpen, onClos
 
   return (
     <div
-      className="fixed inset-0 z-50 xl:hidden flex"
+      className="fixed inset-0 z-50 md:hidden flex"
       role="dialog"
       aria-modal="true"
       aria-label={language === 'hi' ? 'मुख्य नेविगेशन मेनू' : 'Main Navigation Menu'}
@@ -114,7 +108,7 @@ export const MobileDrawerNav: React.FC<MobileDrawerNavProps> = ({ isOpen, onClos
                 key={item.path}
                 to={item.path}
                 onClick={onClose}
-                className={`flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
+                className={`flex items-center justify-between px-4 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
                   isActive
                     ? 'bg-amber-500 text-slate-950 font-black shadow-md'
                     : 'text-slate-300 hover:bg-slate-800 hover:text-white'
@@ -129,16 +123,7 @@ export const MobileDrawerNav: React.FC<MobileDrawerNavProps> = ({ isOpen, onClos
 
         {/* Footer actions inside drawer */}
         <div className="p-4 border-t border-slate-800 bg-slate-950 space-y-3">
-          <Link
-            to="/report-corruption"
-            onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 py-3 bg-red-700 hover:bg-red-600 text-white font-bold text-xs uppercase tracking-wider rounded-lg shadow transition-colors"
-          >
-            <AlertTriangle className="w-4 h-4 text-amber-300" />
-            <span>{t('nav.reportCTA')}</span>
-          </Link>
-
-          <div className="flex items-center justify-center gap-2 text-xs text-slate-400 pt-1">
+          <div className="flex items-center justify-center gap-2 text-xs text-slate-300 pt-1">
             <Phone className="w-3.5 h-3.5 text-amber-400" />
             <span>{t('topBar.helpline')}:</span>
             <a href={`tel:${organizationData.phones[0]}`} className="font-bold text-amber-400 underline">

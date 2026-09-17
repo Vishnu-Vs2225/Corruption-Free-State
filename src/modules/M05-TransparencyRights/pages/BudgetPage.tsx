@@ -4,7 +4,7 @@ import { Breadcrumb } from '../../../components/common/Breadcrumb';
 import { DataNotice } from '../components/DataNotice';
 import { BudgetInfoCard } from '../components/BudgetInfoCard';
 import { OfficialSourceCard } from '../components/OfficialSourceCard';
-import { BUDGET_DEMO_ITEMS, BUDGET_OFFICIAL_SOURCES } from '../data/budget';
+import { BUDGET_ITEMS, BUDGET_OFFICIAL_SOURCES } from '../data/budget';
 import { DollarSign } from 'lucide-react';
 
 export const BudgetPage: React.FC = () => {
@@ -37,14 +37,14 @@ export const BudgetPage: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <DataNotice />
 
-        {/* DEMO BUDGET ITEMS */}
+        {/* PUBLIC BUDGET ITEMS */}
         <div className="space-y-4">
           <h2 className="text-xl font-black text-blue-950 uppercase tracking-tight">
-            {language === 'hi' ? 'नमूना बजट आवंटन' : 'Sample Budget Allocations'}
+            {language === 'hi' ? 'बजट आवंटन विवरण' : 'Budget Allocations Overview'}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {BUDGET_DEMO_ITEMS.map((item) => (
+            {BUDGET_ITEMS.map((item) => (
               <BudgetInfoCard key={item.id} item={item} />
             ))}
           </div>

@@ -24,16 +24,16 @@ export const SafetyNotice: React.FC = () => {
       <div className="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
         <span className="text-slate-400 text-center sm:text-left">
           {language === 'hi'
-            ? 'भ्रष्टाचार या रिश्वतखोरी की रिपोर्ट करने के लिए समर्पित शिकायत प्रक्रिया का उपयोग करें:'
-            : 'For formal corruption complaints, use the designated reporting portal:'}
+            ? 'नागरिक अधिकारों एवं RTI संबंधी जानकारी प्राप्त करने के लिए गाइड देखें:'
+            : 'For citizen rights and RTI assistance, explore our guidance section:'}
         </span>
 
         <Link
-          to="/report-corruption"
+          to="/citizen-rights"
           className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs uppercase tracking-wider rounded-xl transition-colors flex-shrink-0 shadow"
         >
           <Send className="w-3.5 h-3.5" />
-          <span>{language === 'hi' ? 'शिकायत दर्ज करें' : 'Report Corruption'}</span>
+          <span>{language === 'hi' ? 'नागरिक अधिकार' : 'Citizen Rights'}</span>
         </Link>
       </div>
     </div>

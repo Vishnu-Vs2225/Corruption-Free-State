@@ -41,7 +41,7 @@ export interface BudgetItem {
   officialSourceUrl?: string;
 }
 
-export interface TenderDemo {
+export interface TenderItem {
   id: string;
   reference: string;
   title: string;
@@ -55,8 +55,10 @@ export interface TenderDemo {
   statusHi: string;
   category: string;
   categoryHi: string;
-  isDemo: true;
+  isDemo?: boolean;
 }
+
+export type TenderDemo = TenderItem;
 
 export interface AssetItem {
   id: string;
@@ -69,7 +71,7 @@ export interface AssetItem {
   immovableAssets: string;
   verifiedStatus: string;
   verifiedStatusHi: string;
-  isDemo: true;
+  isDemo?: boolean;
 }
 
 export interface RTIStep {

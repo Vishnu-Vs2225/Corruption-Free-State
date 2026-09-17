@@ -57,12 +57,12 @@ export const FAQPage: React.FC = () => {
 
           <button
             type="button"
-            onClick={() => setCategory('reporting')}
+            onClick={() => setCategory('rights')}
             className={`px-4 py-2 rounded-xl text-xs font-bold uppercase transition-colors ${
-              category === 'reporting' ? 'bg-blue-950 text-amber-400 shadow' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+              category === 'rights' ? 'bg-blue-950 text-amber-400 shadow' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
             }`}
           >
-            {language === 'hi' ? 'शिकायत रिपोर्टिंग' : 'Reporting'}
+            {language === 'hi' ? 'नागरिक अधिकार' : 'Citizen Rights'}
           </button>
 
           <button

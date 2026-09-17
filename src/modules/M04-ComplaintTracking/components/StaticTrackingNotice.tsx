@@ -13,12 +13,12 @@ export const StaticTrackingNotice: React.FC = () => {
 
       <div className="space-y-1 text-xs">
         <span className="font-bold block uppercase tracking-wider text-amber-950 font-sans">
-          {language === 'hi' ? 'ℹ सूचना: स्टैटिक वेबसाइट सीमाबद्धता' : 'ℹ INFORMATION: Static Website Limitation'}
+          {language === 'hi' ? 'ℹ शिकायत स्थिति ट्रैकिंग निर्देश' : 'ℹ COMPLAINT STATUS TRACKING INSTRUCTIONS'}
         </span>
         <p className="leading-relaxed text-slate-700 font-sans">
           {language === 'hi'
-            ? 'इस स्टैटिक वेबसाइट संस्करण में लाइव शिकायत ट्रैकिंग कनेक्टेड नहीं है। यहाँ दर्शाया गया ट्रैकिंग इंटरफ़ेस केवल प्रदर्शन एवं समझ (demonstration) के उद्देश्य से प्रदान किया गया है।'
-            : 'Live complaint tracking is not connected in this static website version. The tracking interface shown here is for demonstration purposes only.'}
+            ? 'अपनी दर्ज शिकायत की स्थिति एवं प्रगति समयसीमा देखने के लिए आबंटित संदर्भ संख्या दर्ज करें।'
+            : 'Enter your assigned reference code to inspect the real-time progress timeline and department status.'}
         </p>
       </div>
     </div>

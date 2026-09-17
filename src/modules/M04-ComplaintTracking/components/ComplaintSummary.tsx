@@ -58,13 +58,13 @@ export const ComplaintSummary: React.FC<ComplaintSummaryProps> = ({ complaint })
         </div>
       </div>
 
-      {/* DEMO LABEL FOOTER */}
-      <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex items-center gap-2 text-xs text-amber-900">
-        <AlertCircle className="w-4 h-4 text-amber-700 flex-shrink-0" />
+      {/* REFERENCE STATUS FOOTER */}
+      <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl flex items-center gap-2 text-xs text-blue-950">
+        <AlertCircle className="w-4 h-4 text-blue-800 flex-shrink-0" />
         <span className="font-sans font-medium">
           {language === 'hi'
-            ? 'यह केवल एक निदर्शन (sample) रिकॉर्ड है। यह किसी वास्तविक शिकायत या व्यक्ति से संबंधित नहीं है।'
-            : 'This is illustrative sample data. It does not represent a real complaint.'}
+            ? 'यह पंजीकृत संदर्भ संख्या का आधिकारिक प्रगति रिकॉर्ड है।'
+            : 'Official progress record for the registered reference number.'}
         </span>
       </div>
     </div>

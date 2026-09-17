@@ -11,26 +11,26 @@ interface PredefinedQA {
 const QUICK_QUESTIONS: PredefinedQA[] = [
   {
     id: '1',
-    q: { hi: 'भ्रष्टाचार की शिकायत कैसे दर्ज करें?', en: 'How to report corruption?' },
+    q: { hi: 'नागरिक अधिकार और RTI क्या हैं?', en: 'What are Citizen Rights and RTI?' },
     a: {
-      hi: 'पोर्टल के "शिकायत दर्ज करें" पेज पर जाकर आप गोपनीय (गुमनाम) या साक्ष्य सहित शिकायत दर्ज कर सकते हैं।',
-      en: 'Navigate to the "Report Corruption" page where you can lodge confidential or evidence-backed complaints.',
+      hi: 'पोर्टल के "नागरिक अधिकार" पृष्ठ पर जाकर आप RTI अधिनियम 2005 और नागरिक अधिकार पत्र की जानकारी प्राप्त कर सकते हैं।',
+      en: 'Visit the "Citizen Rights" page to learn about RTI Act 2005 regulations and guaranteed public service timelines.',
     },
   },
   {
     id: '2',
-    q: { hi: 'शिकायत की प्रगति कैसे ट्रैक करें?', en: 'How to track complaint status?' },
+    q: { hi: 'संगठन से कैसे संपर्क करें?', en: 'How to contact the organization?' },
     a: {
-      hi: 'शिकायत दर्ज होने पर प्राप्त संदर्भ संख्या (जैसे CFS-DEMO-001) को "ट्रैक शिकायत" पेज पर दर्ज करके स्थिति देखें।',
-      en: 'Use your assigned Reference ID (e.g. CFS-DEMO-001) on the "Track Complaint" page to view progress timelines.',
+      hi: 'आप "संपर्क करें" पृष्ठ से हमारे प्रशासनिक एवं हेल्पलाइन नंबर (9973076434 / 9110067384) पर सीधे कॉल कर सकते हैं।',
+      en: 'Use the "Contact" page or call official helpline numbers: 9973076434 or 9110067384.',
     },
   },
   {
     id: '3',
-    q: { hi: 'क्या मेरी पहचान सुरक्षित रहेगी?', en: 'Will my identity remain confidential?' },
+    q: { hi: 'संस्था का पंजीकरण विवरण क्या है?', en: 'What is the organization registration details?' },
     a: {
-      hi: 'हाँ, व्हिसलब्लोअर संरक्षण कानून के तहत शिकायतकर्ता की पहचान पूरी तरह से गुप्त रखी जाती है।',
-      en: 'Yes, under Whistleblower protection legal frameworks, complainant identity is strictly safeguarded.',
+      hi: 'भ्रष्टाचार मुक्त राज्य आधिकारिक पंजीकरण क्रमांक: 1597/210/2026 के अंतर्गत एक पंजीकृत जन कल्याणकारी पहल है।',
+      en: 'Corruption Free State operates as a registered public initiative under Reg No: 1597/210/2026.',
     },
   },
   {

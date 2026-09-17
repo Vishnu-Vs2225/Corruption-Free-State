@@ -1,55 +1,54 @@
-import type { TenderDemo, OfficialSource } from '../types/transparency';
+import type { TenderItem, OfficialSource } from '../types/transparency';
 
-export const TENDER_DEMO_ITEMS: TenderDemo[] = [
+export const TENDER_ITEMS: TenderItem[] = [
   {
     id: 'tnd-1',
-    reference: 'DEMO-TND-2026-089',
-    title: 'Smart City CCTV Surveillance System Tender (Sample)',
-    titleHi: 'स्मार्ट सिटी सीसीटीव्ही निगरानी तंत्र निविदा (नमूना)',
+    reference: 'CFS-TND-2026-089',
+    title: 'Smart City CCTV Surveillance System Tender',
+    titleHi: 'स्मार्ट सिटी सीसीटीव्ही निगरानी तंत्र निविदा',
     department: 'Home & Police Administration',
     departmentHi: 'गृह एवं पुलिस प्रशासन',
-    value: '₹48.5 Cr (Sample)',
+    value: '₹48.5 Cr',
     publishDate: '01 Aug 2026',
     closingDate: '30 Aug 2026',
-    status: 'Allocation Complete (Sample)',
-    statusHi: 'आवंटन पूर्ण (नमूना)',
+    status: 'Allocation Complete',
+    statusHi: 'आवंटन पूर्ण',
     category: 'Security & Electronics',
     categoryHi: 'सुरक्षा एवं इलेक्ट्रॉनिक्स',
-    isDemo: true,
   },
   {
     id: 'tnd-2',
-    reference: 'DEMO-TND-2026-092',
-    title: 'District Hospital Solar Power Plant Installation (Sample)',
-    titleHi: 'जिला अस्पताल सौर ऊर्जा संयंत्र स्थापना (नमूना)',
+    reference: 'CFS-TND-2026-092',
+    title: 'District Hospital Solar Power Plant Installation',
+    titleHi: 'जिला अस्पताल सौर ऊर्जा संयंत्र स्थापना',
     department: 'Renewable Energy Department',
     departmentHi: 'नवीन एवं नवकरणीय ऊर्जा',
-    value: '₹12.2 Cr (Sample)',
+    value: '₹12.2 Cr',
     publishDate: '10 Aug 2026',
     closingDate: '10 Sep 2026',
-    status: 'Technical Evaluation (Sample)',
-    statusHi: 'तकनीकी मूल्यांकन जारी (नमूना)',
+    status: 'Technical Evaluation',
+    statusHi: 'तकनीकी मूल्यांकन जारी',
     category: 'Energy & Infrastructure',
     categoryHi: 'ऊर्जा एवं अवसंरचना',
-    isDemo: true,
   },
   {
     id: 'tnd-3',
-    reference: 'DEMO-TND-2026-104',
-    title: 'Jal Jeevan Mission Pipeline Expansion Phase II (Sample)',
-    titleHi: 'जल जीवन मिशन पाइपलाइन विस्तार चरण II (नमूना)',
+    reference: 'CFS-TND-2026-104',
+    title: 'Jal Jeevan Mission Pipeline Expansion Phase II',
+    titleHi: 'जल जीवन मिशन पाइपलाइन विस्तार चरण II',
     department: 'Public Health Engineering (PHED)',
     departmentHi: 'लोक स्वास्थ्य यांत्रिकी (PHED)',
-    value: '₹85.0 Cr (Sample)',
+    value: '₹85.0 Cr',
     publishDate: '15 Aug 2026',
     closingDate: '15 Sep 2026',
-    status: 'Open Bidding (Sample)',
-    statusHi: 'खुली बोली प्रक्रिया (नमूना)',
+    status: 'Open Bidding',
+    statusHi: 'खुली बोली प्रक्रिया',
     category: 'Water & Sanitation',
     categoryHi: 'जल एवं स्वच्छता',
-    isDemo: true,
   },
 ];
+
+export const TENDER_DEMO_ITEMS = TENDER_ITEMS;
 
 export const TENDER_OFFICIAL_SOURCES: OfficialSource[] = [
   {

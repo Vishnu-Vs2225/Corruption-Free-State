@@ -45,7 +45,7 @@ export const TrackingForm: React.FC<TrackingFormProps> = ({ initialValue = '', o
         <div className="flex-1">
           <ComplaintReferenceInput
             label={language === 'hi' ? 'शिकायत संदर्भ संख्या' : 'Complaint Reference Number'}
-            placeholder={language === 'hi' ? 'जैसे DEMO-0001 दर्ज करें...' : 'e.g. CFS-DEMO-0001'}
+            placeholder={language === 'hi' ? 'जैसे CFS-REF-2026-001 दर्ज करें...' : 'e.g. CFS-REF-2026-001'}
             value={refValue}
             error={error}
             onChange={(val) => {

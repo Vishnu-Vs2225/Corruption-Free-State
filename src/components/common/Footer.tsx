@@ -44,14 +44,11 @@ export const Footer: React.FC = () => {
               {t('footer.quickLinks')}
             </h4>
             <ul className="space-y-2 text-xs">
+              <li><Link to="/" className="hover:text-amber-400 transition-colors">➔ {t('nav.home')}</Link></li>
               <li><Link to="/about" className="hover:text-amber-400 transition-colors">➔ {t('nav.about')}</Link></li>
-              <li><Link to="/report-corruption" className="hover:text-amber-400 transition-colors text-red-400 font-semibold">➔ {t('nav.report')}</Link></li>
-              <li><Link to="/track-complaint" className="hover:text-amber-400 transition-colors">➔ {t('nav.track')}</Link></li>
-              <li><Link to="/transparency" className="hover:text-amber-400 transition-colors">➔ {t('nav.transparency')}</Link></li>
               <li><Link to="/citizen-rights" className="hover:text-amber-400 transition-colors">➔ {t('nav.citizenRights')}</Link></li>
-              <li><Link to="/whistleblower-protection" className="hover:text-amber-400 transition-colors">➔ {t('nav.whistleblower')}</Link></li>
-              <li><Link to="/awareness" className="hover:text-amber-400 transition-colors">➔ {t('nav.awareness')}</Link></li>
               <li><Link to="/faq" className="hover:text-amber-400 transition-colors">➔ {t('nav.faq')}</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">➔ {t('nav.contact')}</Link></li>
             </ul>
           </div>
 
@@ -66,12 +63,12 @@ export const Footer: React.FC = () => {
                 <Phone className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="text-slate-400 block text-[11px] uppercase">{t('topBar.helpline')}:</span>
-                  <a href={`tel:${organizationData.phone[0]}`} className="font-bold text-white hover:text-amber-400 mr-2">
-                    {organizationData.phone[0]}
+                  <a href={`tel:${organizationData.phones[0]}`} className="font-bold text-white hover:text-amber-400 mr-2">
+                    {organizationData.phones[0]}
                   </a>
                   <span>/</span>
-                  <a href={`tel:${organizationData.phone[1]}`} className="font-bold text-white hover:text-amber-400 ml-2">
-                    {organizationData.phone[1]}
+                  <a href={`tel:${organizationData.phones[1]}`} className="font-bold text-white hover:text-amber-400 ml-2">
+                    {organizationData.phones[1]}
                   </a>
                 </div>
               </div>
@@ -90,8 +87,7 @@ export const Footer: React.FC = () => {
                 <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="text-slate-400 block text-[11px] uppercase">{t('contact.officeTitle')}:</span>
-                  <p className="text-slate-300">{organizationData.officeAddressBilingual[language]}</p>
-                  <p className="text-slate-400 text-[11px] mt-1 font-mono">{organizationData.residentialAddressBilingual[language]}</p>
+                  <p className="text-slate-300">{organizationData.officeAddress}</p>
                 </div>
               </div>
             </div>
@@ -118,7 +114,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-4">
             <Link to="/about" className="hover:text-slate-300">{t('nav.about')}</Link>
             <span>•</span>
-            <Link to="/report-corruption" className="hover:text-slate-300">{t('nav.report')}</Link>
+            <Link to="/citizen-rights" className="hover:text-slate-300">{t('nav.citizenRights')}</Link>
             <span>•</span>
             <Link to="/contact" className="hover:text-slate-300">{t('nav.contact')}</Link>
           </div>

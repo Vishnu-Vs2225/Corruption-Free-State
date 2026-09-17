@@ -4,14 +4,8 @@ import { MainLayout } from '../components/layout/MainLayout';
 import { Home } from '../pages/Home';
 import { About } from '../pages/About';
 
-// M03 & M04 Pages
-import { ReportLandingPage } from '../modules/M03-ComplaintReporting/pages/ReportLandingPage';
-import { ReportGuidelinesPage } from '../modules/M03-ComplaintReporting/pages/ReportGuidelinesPage';
-import { ComplaintFormPage } from '../modules/M03-ComplaintReporting/pages/ComplaintFormPage';
-import { ReportReviewPage } from '../modules/M03-ComplaintReporting/pages/ReportReviewPage';
-import { DemoSubmissionPage } from '../modules/M03-ComplaintReporting/pages/DemoSubmissionPage';
+// M04 Pages
 import { TrackComplaintPage } from '../modules/M04-ComplaintTracking/pages/TrackComplaintPage';
-import { WhistleblowerPage as WhistleblowerPageM03 } from '../modules/M03-ComplaintReporting/pages/WhistleblowerPage';
 
 // M05 Transparency & Citizen Rights Pages
 import { TransparencyPage } from '../modules/M05-TransparencyRights/pages/TransparencyPage';
@@ -52,16 +46,9 @@ export const AppRoutes: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
-        {/* M03 Complaint & Reporting Routes */}
-        <Route path="/report-corruption" element={<ReportLandingPage />} />
-        <Route path="/report-corruption/guidelines" element={<ReportGuidelinesPage />} />
-        <Route path="/report-corruption/form" element={<ComplaintFormPage />} />
-        <Route path="/report-corruption/review" element={<ReportReviewPage />} />
-        <Route path="/report-corruption/submitted" element={<DemoSubmissionPage />} />
-
         {/* M04 Complaint Tracking Route */}
         <Route path="/track-complaint" element={<TrackComplaintPage />} />
-        <Route path="/whistleblower-protection" element={<WhistleblowerPageM03 />} />
+        <Route path="/whistleblower-protection" element={<WhistleblowerPage />} />
 
         {/* M05 Transparency & Citizen Rights Routes */}
         <Route path="/transparency" element={<TransparencyPage />} />

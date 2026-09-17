@@ -51,7 +51,7 @@ export const TrackComplaintPage: React.FC = () => {
 
       {/* HERO SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="tracking-hero-gradient text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-amber-500/20 border border-amber-500/40 rounded-full text-xs font-bold text-amber-300">
             <Search className="w-4 h-4 text-amber-400" />
             <span>{language === 'hi' ? 'शिकायत ट्रैकिंग मॉड्यूल M04' : 'Complaint Tracking Module M04'}</span>
@@ -90,10 +90,10 @@ export const TrackComplaintPage: React.FC = () => {
               <TrackingResult
                 searchedRef={searchedRef}
                 result={activeResult}
-                onTryDemo={() => handleSelectDemo('DEMO-0001')}
+                onTryDemo={() => handleSelectDemo('CFS-REF-2026-001')}
               />
             ) : (
-              <TrackingEmptyState onTryDemo={() => handleSelectDemo('DEMO-0001')} />
+              <TrackingEmptyState onTryDemo={() => handleSelectDemo('CFS-REF-2026-001')} />
             )}
           </div>
         </div>

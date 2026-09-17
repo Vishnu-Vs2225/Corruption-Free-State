@@ -29,7 +29,7 @@ export interface FAQItem {
   questionHi: string;
   answerEn: string;
   answerHi: string;
-  category: 'reporting' | 'tracking' | 'general' | 'privacy';
+  category: 'rights' | 'tracking' | 'general' | 'privacy';
 }
 
 export interface SocialLink {

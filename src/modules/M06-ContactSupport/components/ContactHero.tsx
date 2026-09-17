@@ -9,7 +9,7 @@ export const ContactHero: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="contact-hero-gradient text-white rounded-3xl p-8 sm:p-12 space-y-6 border-b-4 border-amber-500 shadow-xl">
+      <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-3xl p-8 sm:p-12 space-y-6 border-b-4 border-amber-500 shadow-xl">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-amber-500/20 border border-amber-500/40 rounded-full text-xs font-bold text-amber-300">
           <LifeBuoy className="w-4 h-4 text-amber-400" />
           <span>{language === 'hi' ? 'नागरिक सहायता एवं हेल्पलाइन' : 'CITIZEN HELP & SUPPORT'}</span>
@@ -40,11 +40,11 @@ export const ContactHero: React.FC = () => {
           </a>
 
           <Link
-            to="/report-corruption"
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-slate-700 transition-colors"
+            to="/citizen-rights"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-blue-700 transition-colors"
           >
             <Send className="w-4 h-4 text-amber-400" />
-            <span>{language === 'hi' ? 'शिकायत दर्ज करें' : 'Report Corruption'}</span>
+            <span>{language === 'hi' ? 'नागरिक अधिकार देखें' : 'Citizen Rights'}</span>
           </Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import type { BudgetItem, OfficialSource } from '../types/transparency';
 
-export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
+export const BUDGET_ITEMS: BudgetItem[] = [
   {
     id: 'B-01',
     sector: 'Rural Development & Panchayat',
@@ -8,8 +8,8 @@ export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
     allocated: '₹4,250 Cr',
     spent: '₹3,890 Cr',
     transparencyScore: '92%',
-    status: 'Verified / Audit Complete (Sample)',
-    statusHi: 'सत्यापित / ऑडिट पूर्ण (नमूना)',
+    status: 'Verified / Audit Complete',
+    statusHi: 'सत्यापित / ऑडिट पूर्ण',
     officialSourceUrl: 'https://finance.gov.in',
   },
   {
@@ -19,8 +19,8 @@ export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
     allocated: '₹6,100 Cr',
     spent: '₹5,400 Cr',
     transparencyScore: '86%',
-    status: 'Under Review (Sample)',
-    statusHi: 'समीक्षाधीन (नमूना)',
+    status: 'Under Review',
+    statusHi: 'समीक्षाधीन',
     officialSourceUrl: 'https://mowr.gov.in',
   },
   {
@@ -30,8 +30,8 @@ export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
     allocated: '₹3,800 Cr',
     spent: '₹3,450 Cr',
     transparencyScore: '95%',
-    status: 'Verified / Transparent (Sample)',
-    statusHi: 'सत्यापित / पारदर्शी (नमूना)',
+    status: 'Verified / Transparent',
+    statusHi: 'सत्यापित / पारदर्शी',
     officialSourceUrl: 'https://mohfw.gov.in',
   },
   {
@@ -41,11 +41,13 @@ export const BUDGET_DEMO_ITEMS: BudgetItem[] = [
     allocated: '₹5,200 Cr',
     spent: '₹4,910 Cr',
     transparencyScore: '94%',
-    status: 'Verified / Transparent (Sample)',
-    statusHi: 'सत्यापित / पारदर्शी (नमूना)',
+    status: 'Verified / Transparent',
+    statusHi: 'सत्यापित / पारदर्शी',
     officialSourceUrl: 'https://education.gov.in',
   },
 ];
+
+export const BUDGET_DEMO_ITEMS = BUDGET_ITEMS;
 
 export const BUDGET_OFFICIAL_SOURCES: OfficialSource[] = [
   {

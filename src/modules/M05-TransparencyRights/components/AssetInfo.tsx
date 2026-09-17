@@ -51,21 +51,21 @@ export const AssetInfo: React.FC = () => {
         </div>
       </div>
 
-      {/* SAMPLE ASSET CARD DEMO */}
+      {/* ASSET DECLARATION GUIDE */}
       <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 space-y-4 border border-slate-800 shadow-md">
         <div className="flex items-center justify-between border-b border-slate-800 pb-3">
           <span className="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider">
-            {language === 'hi' ? 'नमूना संपत्ति प्रकटीकरण प्रारूप' : 'EXAMPLE ASSET DECLARATION LAYOUT'}
+            {language === 'hi' ? 'संपत्ति प्रकटीकरण दिशानिर्देश' : 'ASSET DECLARATION FRAMEWORK'}
           </span>
-          <span className="px-2.5 py-0.5 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded text-[11px] font-mono">
-            {language === 'hi' ? 'केवल निदर्शन' : 'DEMO CONTENT ONLY'}
+          <span className="px-2.5 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 rounded text-[11px] font-mono font-bold">
+            {language === 'hi' ? 'सार्वजनिक दिशानिर्देश' : 'PUBLIC FRAMEWORK'}
           </span>
         </div>
 
         <p className="text-xs text-slate-300 font-sans leading-relaxed">
           {language === 'hi'
-            ? 'यह वेबसाइट किसी अधिकारी की मनगढ़ंत संपत्ति सूची प्रदर्शित नहीं करती है। वास्तविक संपत्ति विवरण देखने हेतु आधिकारिक स्रोतों पर जाएं।'
-            : 'This website does not generate fake official asset figures. To access genuine statutory declarations, please refer to official portals.'}
+            ? 'सत्यापित संपत्ति विवरण एवं शपथ पत्र देखने के लिए भारत निर्वाचन आयोग तथा संबंधित राज्य कार्मिक विभाग की आधिकारिक वेबसाइटों का अवलोकन करें।'
+            : 'To access verified statutory asset declarations and sworn affidavits, please refer to the Election Commission of India and state personnel portals.'}
         </p>
 
         <div className="pt-2">

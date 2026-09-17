@@ -25,7 +25,7 @@ export interface DemoComplaint {
   location: string;
   locationHi: string;
   status: TrackingStatus;
-  isDemo: true;
+  isDemo?: boolean;
   lastUpdatedSample?: string;
   lastUpdatedSampleHi?: string;
   timeline: TrackingEvent[];

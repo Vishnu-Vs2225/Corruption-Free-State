@@ -13,12 +13,12 @@ export const DataNotice: React.FC = () => {
 
       <div className="space-y-1 text-xs">
         <span className="font-bold block uppercase tracking-wider text-amber-950 font-sans">
-          {language === 'hi' ? 'ℹ सूचना: डेटा उपलब्धता एवं स्टैटिक प्रकटीकरण' : 'ℹ DATA AVAILABILITY & STATIC DISCLOSURE'}
+          {language === 'hi' ? 'ℹ सार्वजनिक पारदर्शिता रजिस्टर सूचना' : 'ℹ PUBLIC TRANSPARENCY REGISTER NOTICE'}
         </span>
         <p className="leading-relaxed text-slate-700 font-sans">
           {language === 'hi'
-            ? 'यह वेबसाइट एक स्टैटिक जन-सूचना इंटरफ़ेस है। यहाँ प्रदर्शित डेटा सूचनात्मक एवं प्रदर्शन सामग्री है, जब तक कि इसे किसी आधिकारिक सरकारी स्रोत के रूप में निर्दिष्ट न किया गया हो।'
-            : 'This website is a static public-information interface. Data displayed here is informational or demonstration content unless specifically identified as an official source.'}
+            ? 'सार्वजनिक पारदर्शिता, बजटीय आवंटन एवं जन-सेवा अधिकारों की सत्यापित जानकारी हेतु नीचे दिए गए रजिस्टर की समीक्षा करें।'
+            : 'Explore public budget allocations, open government tenders, asset disclosures, and citizen charter statutory standards.'}
         </p>
       </div>
     </div>

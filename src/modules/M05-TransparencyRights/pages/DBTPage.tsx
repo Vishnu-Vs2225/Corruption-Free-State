@@ -17,9 +17,9 @@ export const DBTPage: React.FC = () => {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-blue-950 text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-emerald-500 shadow-xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-emerald-500/20 border border-emerald-500/40 rounded-full text-xs font-bold text-emerald-300">
-            <ShieldAlert className="w-4 h-4 text-emerald-400" />
+        <div className="bg-blue-950 text-white rounded-3xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-amber-500/20 border border-amber-500/40 rounded-full text-xs font-bold text-amber-300">
+            <ShieldAlert className="w-4 h-4 text-amber-400" />
             <span>DIRECT BENEFIT TRANSFER</span>
           </div>
 
@@ -50,10 +50,10 @@ export const DBTPage: React.FC = () => {
 
           <div className="pt-2">
             <Link
-              to="/report-corruption"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-800 hover:bg-red-700 text-white text-xs font-bold uppercase rounded-xl transition-colors shadow"
+              to="/contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase rounded-xl transition-colors shadow"
             >
-              <span>{language === 'hi' ? 'DBT भ्रष्टाचार की रिपोर्ट करें' : 'Report DBT Corruption'}</span>
+              <span>{language === 'hi' ? 'सहायता हेतु संपर्क करें' : 'Contact Helpline Support'}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

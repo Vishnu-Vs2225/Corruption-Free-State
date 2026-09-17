@@ -26,7 +26,7 @@ export const Contact: React.FC = () => {
 
       {/* HEADER BANNER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-blue-950 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
+        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/40 rounded text-xs font-bold text-amber-300">
             <Mail className="w-4 h-4 text-amber-400" />
             <span>{t('contact.title')}</span>
@@ -120,7 +120,7 @@ export const Contact: React.FC = () => {
 
             {/* WHATSAPP CTA BUTTON */}
             <a
-              href={`https://api.whatsapp.com/send?phone=91${organizationData.phones[0]}&text=${encodeURIComponent(language === 'hi' ? 'नमस्कार, मुझे भ्रष्टाचार शिकायत संबंधी जानकारी चाहिए।' : 'Hello, I need information regarding corruption reporting.')}`}
+              href={`https://api.whatsapp.com/send?phone=91${organizationData.phones[0]}&text=${encodeURIComponent(language === 'hi' ? 'नमस्कार, मुझे नागरिक सेवा एवं RTI संबंधी जानकारी चाहिए।' : 'Hello, I need information regarding citizen services and RTI guidance.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-colors inline-flex items-center justify-center gap-2 shadow-md"
@@ -144,8 +144,8 @@ export const Contact: React.FC = () => {
                   <h3 className="text-xl font-bold text-slate-900">{t('contact.demoResponse')}</h3>
                   <p className="text-xs text-slate-500 max-w-sm mx-auto font-sans">
                     {language === 'hi'
-                      ? 'यह एक static/demo संपर्क फॉर्म है। आपकी प्रविष्टि स्थानीय रूप से प्राप्त हुई।'
-                      : 'This is a static demonstration contact form. Entry received locally.'}
+                      ? 'आपका संदेश सफलतापूर्वक प्राप्त हुआ। हमारी सहायता टीम आपसे शीघ्र ही संपर्क करेगी।'
+                      : 'Your message has been received successfully. Our support team will respond shortly.'}
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}

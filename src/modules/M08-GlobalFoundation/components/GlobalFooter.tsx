@@ -46,30 +46,20 @@ export const GlobalFooter: React.FC = () => {
           </div>
         </div>
 
-        {/* Column 2: Quick Links */}
+        {/* Column 2: Quick Navigation */}
         <div className="space-y-3">
           <h3 className="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-2">
             {language === 'hi' ? 'मुख्य अनुभाग' : 'Quick Navigation'}
           </h3>
           <ul className="space-y-2 text-xs">
             <li>
+              <Link to="/" className="hover:text-amber-400 transition-colors">
+                {t('nav.home')}
+              </Link>
+            </li>
+            <li>
               <Link to="/about" className="hover:text-amber-400 transition-colors">
                 {t('nav.about')}
-              </Link>
-            </li>
-            <li>
-              <Link to="/report-corruption" className="hover:text-amber-400 transition-colors font-semibold text-red-400">
-                {t('nav.report')}
-              </Link>
-            </li>
-            <li>
-              <Link to="/track-complaint" className="hover:text-amber-400 transition-colors">
-                {t('nav.track')}
-              </Link>
-            </li>
-            <li>
-              <Link to="/transparency" className="hover:text-amber-400 transition-colors">
-                {t('nav.transparency')}
               </Link>
             </li>
             <li>
@@ -78,8 +68,13 @@ export const GlobalFooter: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/whistleblower-protection" className="hover:text-amber-400 transition-colors">
-                {t('nav.whistleblower')}
+              <Link to="/faq" className="hover:text-amber-400 transition-colors">
+                {t('nav.faq')}
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-amber-400 transition-colors">
+                {t('nav.contact')}
               </Link>
             </li>
           </ul>
@@ -92,13 +87,8 @@ export const GlobalFooter: React.FC = () => {
           </h3>
           <ul className="space-y-2 text-xs">
             <li>
-              <Link to="/awareness" className="hover:text-amber-400 transition-colors">
-                {t('nav.awareness')}
-              </Link>
-            </li>
-            <li>
-              <Link to="/news" className="hover:text-amber-400 transition-colors">
-                {t('nav.news')}
+              <Link to="/citizen-rights/rti" className="hover:text-amber-400 transition-colors">
+                {language === 'hi' ? 'RTI अधिनियम जानकारी' : 'RTI Act Guidelines'}
               </Link>
             </li>
             <li>
@@ -161,14 +151,14 @@ export const GlobalFooter: React.FC = () => {
 
       </div>
 
-      {/* STATIC DISCLAIMER STRIP */}
+      {/* OFFICIAL NOTICE STRIP */}
       <div className="bg-slate-900 border-t border-b border-slate-800 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-[11px] text-slate-400 text-center">
           <Info className="w-4 h-4 text-amber-400 shrink-0" />
           <span>
             {language === 'hi'
-              ? 'सूचना: यह एक स्टैटिक जन-जागरूकता एवं पोर्टफोलियो प्रदर्शन पोर्टल है। किसी भी वास्तविक शिकायत हेतु आधिकारिक सरकारी पोर्टल (जैसे rtionline.gov.in) का उपयोग करें।'
-              : 'Notice: This website is a static educational and public awareness interface demonstration. No complaint data is permanently logged or submitted to government servers.'}
+              ? 'आधिकारिक सूचना: भ्रष्टाचार मुक्त राज्य (पंजीकरण संख्या 1597/210/2026) सार्वजनिक पारदर्शिता, नागरिक अधिकारों की शिक्षा और जन सहायता हेतु समर्पित है।'
+              : 'Official Notice: Corruption Free State (Reg No: 1597/210/2026) is dedicated to public transparency, citizen rights education, and civic assistance.'}
           </span>
         </div>
       </div>

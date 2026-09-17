@@ -1,5 +1,5 @@
 import React from 'react';
-import { CITIZEN_CHARTER_DEMO } from '../data/citizenRights';
+import { CITIZEN_CHARTER_ITEMS } from '../data/citizenRights';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { FileText, Clock, Building } from 'lucide-react';
 
@@ -19,7 +19,7 @@ export const CitizenCharterTable: React.FC = () => {
           </h3>
         </div>
         <span className="px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded text-xs font-mono font-bold">
-          {language === 'hi' ? 'नमूना सरणी' : 'SAMPLE TABLE'}
+          {language === 'hi' ? 'नागरिक तालिका' : 'SERVICE TABLE'}
         </span>
       </div>
 
@@ -34,7 +34,7 @@ export const CitizenCharterTable: React.FC = () => {
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-200 font-sans">
-            {CITIZEN_CHARTER_DEMO.map((item) => {
+            {CITIZEN_CHARTER_ITEMS.map((item) => {
               const service = language === 'hi' ? item.serviceHi : item.service;
               const timeline = language === 'hi' ? item.timelineHi : item.timeline;
               const office = language === 'hi' ? item.officeHi : item.office;

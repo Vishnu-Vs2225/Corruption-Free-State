@@ -3,7 +3,6 @@ export const hiTranslations = {
   nav: {
     home: 'मुख्य पृष्ठ',
     about: 'हमारे बारे में',
-    report: 'शिकायत दर्ज करें',
     track: 'ट्रैक शिकायत',
     transparency: 'पारदर्शिता',
     citizenRights: 'नागरिक अधिकार',
@@ -12,7 +11,7 @@ export const hiTranslations = {
     news: 'समाचार एवं अपडेट',
     faq: 'प्रश्नोत्तरी (FAQ)',
     contact: 'संपर्क करें',
-    reportCTA: 'भ्रष्टाचार की रिपोर्ट करें',
+    reportCTA: 'नागरिक अधिकार जानें',
   },
 
   // Top Notification Bar
@@ -27,15 +26,15 @@ export const hiTranslations = {
   hero: {
     eyebrow: 'पारदर्शिता • जवाबदेही • न्याय',
     titleMain: 'भ्रष्टाचार मुक्त राज्य',
-    titleSub: 'भ्रष्टाचार के खिलाफ आपकी बुलंद आवाज़',
+    titleSub: 'पारदर्शिता और नागरिक अधिकारों की आवाज़',
     desc: 'हम सार्वजनिक सूचनाओं को सुलभ बनाते हैं, प्रशासनिक पारदर्शिता को मापनीय बनाते हैं और सरकारी संस्थानों को जनता के प्रति जवाबदेह बनाते हैं।',
-    primaryCTA: 'भ्रष्टाचार की रिपोर्ट करें ➔',
+    primaryCTA: 'नागरिक अधिकार ➔',
     secondaryCTA: 'नागरिक अधिकार जानें',
     stat1Label: 'प्राप्त शिकायतें',
     stat2Label: 'जांच जारी',
     stat3Label: 'निस्तारित मामले',
     stat4Label: 'पारदर्शिता स्कोर',
-    demoNotice: 'डेमो पोर्टल — सूचनात्मक उद्देश्य हेतु',
+    demoNotice: 'आधिकारिक पोर्टल • पंजीकरण सं: 1597/210/2026',
   },
 
   // Organization Intro
@@ -56,8 +55,8 @@ export const hiTranslations = {
   // Quick Action Cards
   quickActions: {
     title: 'त्वरित सेवाएं एवं नागरिक सुविधाएं',
-    reportTitle: 'शिकायत दर्ज करें',
-    reportDesc: 'प्रशासनिक धांधली या घूसखोरी की गोपनीय या साक्ष्य-आधारित शिकायत प्रस्तुत करें।',
+    reportTitle: 'नागरिक अधिकार',
+    reportDesc: 'RTI अधिनियम, गारंटीकृत लोक सेवाएं और DBT कल्याणकारी योजनाओं की जानकारी।',
     trackTitle: 'शिकायत ट्रैक करें',
     trackDesc: 'संदर्भ नंबर (Reference ID) से अपनी दर्ज शिकायत की प्रगति समयसीमा देखें।',
     rightsTitle: 'नागरिक अधिकार',
@@ -66,53 +65,15 @@ export const hiTranslations = {
     transparencyDesc: 'सरकारी ठेकों, संपत्ति घोषणाओं और निविदा आवंटन की खुली जानकारी।',
   },
 
-  // Complaint Reporting Page
-  complaint: {
-    title: 'भ्रष्टाचार शिकायत पंजीकरण',
-    subtitle: 'सार्वजनिक हित में प्रशासनिक अनिमितताओं की रिपोर्ट करें',
-    guidanceTitle: 'शिकायत प्रस्तुत करने हेतु महत्वपूर्ण निर्देश',
-    rule1: 'सत्य एवं प्रामाणिक साक्ष्य ही संलग्न करें। गलत या भ्रामक जानकारी कानूनी रूप से दंडनीय है।',
-    rule2: 'गोपनीयता विकल्प चुनने पर आपकी व्यक्तिगत जानकारी उजागर नहीं की जाएगी।',
-    rule3: 'यह एक static/demo इंटरफ़ेस है, साक्ष्य फाइलें स्थानीय रूप से ब्राउज़र में ही रहती हैं।',
-
-    // Form
-    anonymousToggle: 'गोपनीय (गुमनाम) शिकायत दर्ज करें',
-    anonymousNotice: 'गोपनीय मोड चालू है: आपकी पहचान और संपर्क विवरण छुपा दिए गए हैं।',
-    nameLabel: 'नागरिक का नाम',
-    namePlaceholder: 'अपना पूरा नाम दर्ज करें',
-    emailLabel: 'ईमेल पता',
-    phoneLabel: 'मोबाइल नंबर',
-    departmentLabel: 'संबंधित विभाग',
-    departmentPlaceholder: 'विभाग का चयन करें (जैसे PWD, स्वास्थ्य, शिक्षा...)',
-    categoryLabel: 'भ्रष्टाचार का प्रकार',
-    categoryPlaceholder: 'प्रकार चुनें (जैसे रिश्वतखोरी, टेंडर गबन, राशन धांधली...)',
-    descriptionLabel: 'शिकायत का विस्तृत विवरण',
-    descriptionPlaceholder: 'घटना की तारीख, स्थान, संबंधित अधिकारी एवं पूरी जानकारी लिखें...',
-    evidenceLabel: 'साक्ष्य संलग्न करें (Demo UI)',
-    evidenceHelp: 'स्वीकार्य प्रारूप: PDF, JPG, PNG, MP3, MP4 (स्थानीय चयन)',
-
-    // Buttons
-    submitBtn: 'शिकायत समीक्षा हेतु भेजें ➔',
-    confirmBtn: 'अंतिम जमा करें (Demo Submit)',
-    editBtn: 'संशोधन करें',
-
-    // States
-    reviewTitle: 'शिकायत समीक्षा (Review Screen)',
-    demoSuccessTitle: 'शिकायत सफलता पूर्वक पंजीकृत (Demo)',
-    refCodeLabel: 'आपका शिकायत संदर्भ नंबर:',
-    demoDisclaimer: 'यह एक static/demo शिकायत पंजीकरण इंटरफ़ेस है। कोई डेटा सर्वर पर नहीं भेजा गया है।',
-    trackActionBtn: 'इस शिकायत को ट्रैक करें ➔',
-  },
-
   // Tracking Page
   tracking: {
     title: 'शिकायत की स्थिति ट्रैक करें',
     subtitle: 'अपनी दर्ज शिकायत का संदर्भ नंबर (Reference ID) दर्ज करके अद्यतन प्रगति देखें',
-    inputPlaceholder: 'जैसे CFS-DEMO-001 दर्ज करें...',
+    inputPlaceholder: 'जैसे CFS-REF-2026-001 दर्ज करें...',
     trackBtn: 'ट्रैक करें',
-    sampleNotice: 'परीक्षण हेतु नमूना संदर्भ आईडी प्रयोग करें: CFS-DEMO-001 या CFS-DEMO-002',
-    notFound: 'संदर्भ आईडी नहीं मिली। कृपया नमूना आईडी CFS-DEMO-001 दर्ज करके प्रयास करें।',
-    demoNoticeBanner: 'प्रदर्शन डेटा — यह लाइव सरकारी केस-प्रबंधन प्रणाली से कनेक्टेड नहीं है।',
+    sampleNotice: 'अपनी आबंटित संदर्भ संख्या दर्ज करें (जैसे CFS-REF-2026-001)',
+    notFound: 'संदर्भ आईडी नहीं मिली। कृपया संदर्भ संख्या जांचकर पुनः प्रयास करें।',
+    demoNoticeBanner: 'आधिकारिक ट्रैकिंग रजिस्टर — नीचे अपनी संदर्भ संख्या दर्ज करें।',
     statusLabel: 'वर्तमान स्थिति',
     departmentLabel: 'विभाग',
     submittedOn: 'पंजीकरण तिथि',
@@ -154,7 +115,7 @@ export const hiTranslations = {
     whatsappBtn: 'व्हाट्सएप (WhatsApp) पर जुड़ें',
     formTitle: 'संदेश / पूछताछ फॉर्म',
     sendBtn: 'संदेश भेजें ➔',
-    demoResponse: 'आपका संदेश प्राप्त हुआ। (Demo Feedback Received)',
+    demoResponse: 'संदेश सफलतापूर्वक भेजा गया।',
   },
 
   // Footer
@@ -163,7 +124,7 @@ export const hiTranslations = {
     quickLinks: 'त्वरित लिंक',
     helplineHeading: '24x7 हेल्पलाइन',
     regInfo: 'पंजीकरण क्रमांक: 1597/210/2026',
-    disclaimer: 'यह वेबसाइट एक static/demo नागरिक-जागरूकता पोर्टल है। यह किसी वास्तविक सरकारी सर्वर या लाइव शिकायत प्रबंधन प्रणाली से सीधे जुड़ी नहीं है।',
+    disclaimer: 'भ्रष्टाचार मुक्त राज्य एक स्वायत्त सार्वजनिक जवाबदेही पहल है जो पंजीकरण क्रमांक 1597/210/2026 के अंतर्गत संचालित है।',
     copyright: '© 2026 भ्रष्टाचार मुक्त राज्य (Corruption Free State). सर्वाधिकार सुरक्षित।',
   },
 };

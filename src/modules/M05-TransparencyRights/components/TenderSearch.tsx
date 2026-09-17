@@ -21,9 +21,9 @@ export const TenderSearch: React.FC<TenderSearchProps> = ({ onSearchSubmit }) =>
       <div className="flex items-center justify-between pb-2 border-b border-slate-100">
         <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
           <Filter className="w-4 h-4 text-amber-500" />
-          <span>{language === 'hi' ? 'सरकारी निविदाएं खोजें (Search Tenders Demo)' : 'Search Government Tenders (Demo UI)'}</span>
+          <span>{language === 'hi' ? 'सरकारी निविदाएं खोजें' : 'Search Government Tenders'}</span>
         </h4>
-        <span className="text-[11px] font-mono text-slate-400">STATIC SEARCH</span>
+        <span className="text-[11px] font-mono text-slate-400">TENDER SEARCH</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-3">
@@ -65,8 +65,8 @@ export const TenderSearch: React.FC<TenderSearchProps> = ({ onSearchSubmit }) =>
         <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0" />
         <span>
           {language === 'hi'
-            ? 'कोई भी लाइव निविदा डेटाबेस कनेक्टेड नहीं है। यह खोज फ़िल्टर केवल नमूना डेटासेट पर कार्य करता है।'
-            : 'No live tender database connected. Search filters operate on sample demonstration datasets only.'}
+            ? 'कीवर्ड, विभाग, स्थिति या श्रेणी के आधार पर आधिकारिक निविदा रिकॉर्ड्स खोजें।'
+            : 'Search official government tenders by keyword, department, status, or procurement type.'}
         </span>
       </div>
     </form>
