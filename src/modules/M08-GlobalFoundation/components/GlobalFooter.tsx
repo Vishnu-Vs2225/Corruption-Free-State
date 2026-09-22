@@ -27,6 +27,9 @@ export const GlobalFooter: React.FC = () => {
               <div className="text-[11px] font-semibold text-amber-400">
                 Reg No: {organizationData.registrationNumber}
               </div>
+              <div className="text-[11px] font-medium text-slate-300">
+                {language === 'hi' ? `संस्थापक: ${organizationData.founderHindi}` : `Founder: ${organizationData.founder}`}
+              </div>
             </div>
           </div>
 
@@ -144,7 +147,16 @@ export const GlobalFooter: React.FC = () => {
 
             <div className="flex items-start gap-2 text-slate-300">
               <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-              <span className="text-slate-400">{organizationData.officeAddress}</span>
+              <div className="space-y-1 text-xs">
+                <div>
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold">{language === 'hi' ? 'कार्यालय पता:' : 'Office Address:'}</span>
+                  <span className="text-slate-300">{organizationData.officeAddress}</span>
+                </div>
+                <div>
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold">{language === 'hi' ? 'आवासीय कार्यालय:' : 'Residential Office:'}</span>
+                  <span className="text-slate-300">{organizationData.residentialOffice}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

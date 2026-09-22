@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { organizationData } from '../data/organization';
 import { Breadcrumb } from '../components/common/Breadcrumb';
-import { ShieldCheck, Target, Award, Phone, Mail, MapPin } from 'lucide-react';
+import { ShieldCheck, Target, Award, Phone, Mail, MapPin, UserCheck, ExternalLink } from 'lucide-react';
 
 export const About: React.FC = () => {
   const { language, t } = useLanguage();
@@ -32,6 +32,45 @@ export const About: React.FC = () => {
       {/* DETAILED ORGANIZATION INFORMATION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
+        {/* Founder & Leadership Profile Card */}
+        <div className="bg-gradient-to-r from-blue-950 via-slate-900 to-blue-900 text-white rounded-2xl p-8 shadow-md border border-blue-900 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div className="md:col-span-8 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 border border-amber-400/40 rounded text-xs font-bold text-amber-300 uppercase tracking-wider">
+              <UserCheck className="w-4 h-4 text-amber-400" />
+              <span>{language === 'hi' ? 'संस्थापक एवं नेतृत्व' : 'Founder & Leadership'}</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black text-white">
+              {language === 'hi' ? organizationData.founderHindi : organizationData.founder}
+            </h2>
+            <p className="text-xs text-slate-300 leading-relaxed font-sans">
+              {language === 'hi'
+                ? 'भ्रष्टाचार मुक्त राज्य अभियान के संस्थापक श्री राजेश विश्वकर्मा नागरिकों को जागरूक करने, प्रशासनिक पारदर्शिता स्थापित करने और भ्रष्टाचार-मुक्त समाज के निर्माण के लिए निरंतर प्रयासरत हैं।'
+                : 'Mr. Rajesh Vishwakarma, Founder of Corruption Free State, leads the vision of empowering citizens with legal rights, RTI awareness, and active civic participation to eliminate corruption.'}
+            </p>
+          </div>
+
+          <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center">
+            <a
+              href={organizationData.socialHandles.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-2 shadow"
+            >
+              <span>Facebook Profile</span>
+              <ExternalLink className="w-3.5 h-3.5 text-blue-200" />
+            </a>
+            <a
+              href={organizationData.socialHandles.twitterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl border border-slate-700 transition-colors flex items-center justify-center gap-2 shadow"
+            >
+              <span>Twitter / 𝕏</span>
+              <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+            </a>
+          </div>
+        </div>
+
         {/* Registration & Legal Status Box */}
         <div className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
@@ -49,6 +88,7 @@ export const About: React.FC = () => {
 
             <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg text-xs font-mono space-y-1 text-slate-700">
               <div>REGISTRATION NUMBER: <span className="font-bold text-blue-950">{organizationData.registrationNumber}</span></div>
+              <div>FOUNDER: <span className="font-bold text-blue-950">{organizationData.founder}</span></div>
               <div>CLASSIFICATION: AUTONOMOUS CIVIC ACCOUNTABILITY INITIATIVE</div>
               <div>STATUS: ACTIVE & RECOGNIZED</div>
             </div>
@@ -132,9 +172,14 @@ export const About: React.FC = () => {
             <div className="p-4 bg-blue-900/50 rounded-lg space-y-2">
               <div className="flex items-center gap-2 font-bold text-white">
                 <MapPin className="w-4 h-4 text-amber-400" />
-                <span>{t('contact.officeTitle')}</span>
+                <span>{language === 'hi' ? 'कार्यालय एवं आवासीय पता' : 'Office & Residential Addresses'}</span>
               </div>
-              <p className="text-slate-300 font-sans">{organizationData.officeAddressBilingual[language]}</p>
+              <p className="text-slate-300 font-sans text-xs">
+                <strong className="text-amber-300">Office:</strong> {organizationData.officeAddressBilingual[language]}
+              </p>
+              <p className="text-slate-300 font-sans text-xs">
+                <strong className="text-amber-300">Res. Office:</strong> {organizationData.residentialAddressBilingual[language]}
+              </p>
             </div>
           </div>
         </div>

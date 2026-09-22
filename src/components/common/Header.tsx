@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
       {/* TOP NOTIFICATION & HELPLINE BAR */}
       <div className="bg-slate-900 text-slate-300 py-1.5 px-4 border-b border-slate-800 text-xs">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          
+
           {/* Left: Registration Badge */}
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded text-[11px] font-semibold">
@@ -67,7 +67,7 @@ export const Header: React.FC = () => {
       {/* MAIN HEADER BRANDING & NAVIGATION BAR */}
       <div className="bg-white border-b border-slate-200 py-2.5 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          
+
           {/* BRAND LOGO & TITLE */}
           <Link to="/" className="flex items-center gap-3.5 group">
             <img
@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
                 {language === 'hi' ? 'भ्रष्टाचार मुक्त राज्य' : 'Corruption Free State'}
               </div>
               <div className="text-[10px] sm:text-[11px] font-bold text-amber-600 tracking-wider uppercase">
-                {language === 'hi' ? 'भ्रष्टाचार नियंत्रण • सम्बंध समाधान' : 'Corruption Control Initiative'}
+                {language === 'hi' ? 'सम्पर्क • समस्या • समाधान' : 'Contact • Issues • Solution'}
               </div>
             </div>
           </Link>
@@ -107,11 +107,10 @@ export const Header: React.FC = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-4 py-3 transition-colors inline-block border-b-2 ${
-                    isActive
-                      ? 'bg-blue-900 text-amber-400 border-amber-400 font-bold'
-                      : 'text-slate-200 hover:bg-blue-900 hover:text-white border-transparent'
-                  }`}
+                  className={`px-4 py-3 transition-colors inline-block border-b-2 ${isActive
+                    ? 'bg-blue-900 text-amber-400 border-amber-400 font-bold'
+                    : 'text-slate-200 hover:bg-blue-900 hover:text-white border-transparent'
+                    }`}
                 >
                   {t(item.labelKey)}
                 </Link>
@@ -132,9 +131,8 @@ export const Header: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-between ${
-                    isActive ? 'bg-amber-500 text-slate-950 font-extrabold' : 'text-slate-200 hover:bg-blue-900'
-                  }`}
+                  className={`px-4 py-3 rounded text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-between ${isActive ? 'bg-amber-500 text-slate-950 font-extrabold' : 'text-slate-200 hover:bg-blue-900'
+                    }`}
                 >
                   <span>{t(item.labelKey)}</span>
                   <span>➔</span>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { organizationData } from '../data/organization';
 import { Breadcrumb } from '../components/common/Breadcrumb';
-import { Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { OfficialBannerCard } from '../components/common/OfficialBannerCard';
+import { Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare, Home } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const { language, t } = useLanguage();
@@ -24,22 +25,9 @@ export const Contact: React.FC = () => {
     <div className="space-y-12">
       <Breadcrumb items={[{ label: t('nav.contact') }]} />
 
-      {/* HEADER BANNER */}
+      {/* OFFICIAL BANNER DISPLAY */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white rounded-2xl p-8 sm:p-12 space-y-4 border-b-4 border-amber-500 shadow-xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/40 rounded text-xs font-bold text-amber-300">
-            <Mail className="w-4 h-4 text-amber-400" />
-            <span>{t('contact.title')}</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight">
-            {t('contact.title')}
-          </h1>
-
-          <p className="text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
-            {t('contact.subtitle')}
-          </p>
-        </div>
+        <OfficialBannerCard />
       </section>
 
       {/* CONTACT GRID */}
@@ -101,19 +89,27 @@ export const Contact: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900">{t('contact.officeTitle')}</h3>
-                  <span className="text-[11px] text-slate-500 font-mono">REGISTRATION: 1597/210/2026</span>
+                  <h3 className="text-sm font-bold text-slate-900">
+                    {language === 'hi' ? 'कार्यालय एवं आवासीय पता' : 'Office & Residential Address'}
+                  </h3>
+                  <span className="text-[11px] text-slate-500 font-mono">REGISTRATION: {organizationData.registrationNumber}</span>
                 </div>
               </div>
 
               <div className="space-y-3 pt-2 border-t border-slate-100">
-                <div>
-                  <strong className="block text-slate-900 mb-0.5">{t('contact.officeTitle')}:</strong>
-                  <p className="text-slate-600 leading-relaxed">{organizationData.officeAddressBilingual[language]}</p>
+                <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <strong className="text-slate-900 flex items-center gap-1.5 font-bold uppercase">
+                    <MapPin className="w-3.5 h-3.5 text-blue-900" />
+                    <span>{language === 'hi' ? 'कार्यालय पता (Office Address):' : 'Office Address:'}</span>
+                  </strong>
+                  <p className="text-slate-700 font-semibold leading-relaxed">{organizationData.officeAddressBilingual[language]}</p>
                 </div>
-                <div>
-                  <strong className="block text-slate-900 mb-0.5">{t('contact.residentialTitle')}:</strong>
-                  <p className="text-slate-600 leading-relaxed">{organizationData.residentialAddressBilingual[language]}</p>
+                <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <strong className="text-slate-900 flex items-center gap-1.5 font-bold uppercase">
+                    <Home className="w-3.5 h-3.5 text-emerald-700" />
+                    <span>{language === 'hi' ? 'आवासीय कार्यालय (Residential Office):' : 'Residential Office:'}</span>
+                  </strong>
+                  <p className="text-slate-700 font-semibold leading-relaxed">{organizationData.residentialAddressBilingual[language]}</p>
                 </div>
               </div>
             </div>

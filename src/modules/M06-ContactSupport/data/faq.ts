@@ -44,9 +44,9 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: 'faq-6',
     category: 'general',
-    questionEn: 'Where is the main administrative office located?',
-    questionHi: 'मुख्य प्रशासनिक कार्यालय कहाँ स्थित है?',
-    answerEn: 'Our registered office operates under Registration No. 1597/210/2026 at the Main Administrative Office, Public Governance Complex.',
-    answerHi: 'हमारा पंजीकृत कार्यालय पंजीकरण संख्या 1597/210/2026 के तहत मुख्य प्रशासनिक कार्यालय, सार्वजनिक सुशासन परिसर में संचालित है।',
+    questionEn: 'Where are the office and residential office located?',
+    questionHi: 'कार्यालय एवं आवासीय कार्यालय कहाँ स्थित हैं?',
+    answerEn: 'Office Address: Naya toli, Simliya, Ratu, Ranchi, 835222 | Residential Office: Village+Po:- Kathar Kalan, Ps - Dhurki, Dist:- Garhwa (Jh) 822121 (Registration No: 1597/210/2026).',
+    answerHi: 'कार्यालय पता: नया टोली, सिमलिया, रातू, रांची, 835222 | आवासीय कार्यालय: ग्राम+पो:- कथर कलां, थाना - धुरकी, जिला:- गढ़वा (झारखंड) 822121 (पंजीकरण क्रमांक: 1597/210/2026)।',
   },
 ];

@@ -32,9 +32,14 @@ export const Footer: React.FC = () => {
               {t('org.subtitle')}. {t('footer.tagline')}
             </p>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-900 border border-slate-800 rounded text-xs text-amber-400 font-semibold">
-              <ShieldCheck className="w-4 h-4 text-amber-400" />
-              <span>{language === 'hi' ? 'पंजीकरण संख्या: 1597/210/2026' : 'Registration No: 1597/210/2026'}</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-900 border border-slate-800 rounded text-xs text-amber-400 font-semibold">
+                <ShieldCheck className="w-4 h-4 text-amber-400" />
+                <span>{language === 'hi' ? 'पंजीकरण संख्या: 1597/210/2026' : 'Registration No: 1597/210/2026'}</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-900 border border-slate-800 rounded text-xs text-slate-300 font-semibold">
+                <span>{language === 'hi' ? `संस्थापक: ${organizationData.founderHindi}` : `Founder: ${organizationData.founder}`}</span>
+              </div>
             </div>
           </div>
 
@@ -85,9 +90,15 @@ export const Footer: React.FC = () => {
 
               <div className="flex items-start gap-2.5 pt-1">
                 <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <div>
-                  <span className="text-slate-400 block text-[11px] uppercase">{t('contact.officeTitle')}:</span>
-                  <p className="text-slate-300">{organizationData.officeAddress}</p>
+                <div className="space-y-1">
+                  <div>
+                    <span className="text-slate-400 block text-[11px] uppercase">{language === 'hi' ? 'कार्यालय पता (Office Address):' : 'Office Address:'}</span>
+                    <p className="text-slate-300 text-xs">{organizationData.officeAddress}</p>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px] uppercase">{language === 'hi' ? 'आवासीय कार्यालय (Residential Office):' : 'Residential Office:'}</span>
+                    <p className="text-slate-300 text-xs">{organizationData.residentialOffice}</p>
+                  </div>
                 </div>
               </div>
             </div>

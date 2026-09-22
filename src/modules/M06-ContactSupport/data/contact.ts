@@ -2,13 +2,13 @@ import type { ContactInfo, SupportChannel } from '../types/contact';
 
 export const CONTACT_CONFIG: ContactInfo = {
   phone: '9973076434',
-  phoneSecondary: '9973076434',
-  email: 'contact@corruptionfreestate.org',
+  phoneSecondary: '9110067384',
+  email: 'corruptionfreestate@gmail.com',
   registrationNumber: '1597/210/2026',
-  officeAddressEn: 'Main Administrative Office, Anti-Corruption Forum, Sector 4, Public Governance Complex',
-  officeAddressHi: 'मुख्य प्रशासनिक कार्यालय, भ्रष्टाचार निवारण मंच, सेक्टर 4, सार्वजनिक सुशासन परिसर',
-  residentialAddressEn: 'Citizen Liaison Office, Block B, Democratic Secretariat Building',
-  residentialAddressHi: 'नागरिक संपर्क कार्यालय, ब्लॉक बी, लोकतांत्रिक सचिवालय भवन',
+  officeAddressEn: 'Naya toli, Simliya, Ratu, Ranchi, 835222',
+  officeAddressHi: 'नया टोली, सिमलिया, रातू, रांची, 835222',
+  residentialAddressEn: 'Village+Po:- Kathar Kalan, Ps - Dhurki, Dist:- Garhwa (Jh) 822121',
+  residentialAddressHi: 'ग्राम+पो:- कथर कलां, थाना - धुरकी, जिला:- गढ़वा (झारखंड) 822121',
   whatsappPhone: '9973076434',
 };
 

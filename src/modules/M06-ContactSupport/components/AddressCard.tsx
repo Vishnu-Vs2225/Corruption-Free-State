@@ -1,7 +1,7 @@
 import React from 'react';
 import { CONTACT_CONFIG } from '../data/contact';
 import { useLanguage } from '../../../i18n/LanguageContext';
-import { MapPin, Building2 } from 'lucide-react';
+import { MapPin, Building2, Home } from 'lucide-react';
 
 export const AddressCard: React.FC = () => {
   const { language } = useLanguage();
@@ -14,7 +14,7 @@ export const AddressCard: React.FC = () => {
       <div className="flex items-center gap-2 border-b border-slate-100 pb-3 text-blue-950">
         <MapPin className="w-5 h-5 text-amber-500" />
         <h4 className="text-sm font-bold uppercase tracking-wider">
-          {language === 'hi' ? 'हमारा कार्यालय पता' : 'OUR OFFICE ADDRESS'}
+          {language === 'hi' ? 'कार्यालय एवं आवासीय पता' : 'OFFICE & RESIDENTIAL ADDRESS'}
         </h4>
       </div>
 
@@ -22,17 +22,17 @@ export const AddressCard: React.FC = () => {
         <div className="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl space-y-1">
           <div className="flex items-center gap-1.5 font-bold text-slate-900 uppercase">
             <Building2 className="w-3.5 h-3.5 text-blue-900" />
-            <span>{language === 'hi' ? 'मुख्य प्रशासनिक कार्यालय:' : 'Main Administrative Office:'}</span>
+            <span>{language === 'hi' ? 'कार्यालय पता (Office Address):' : 'Office Address:'}</span>
           </div>
-          <p className="text-slate-600 leading-relaxed font-sans">{officeAddr}</p>
+          <p className="text-slate-600 leading-relaxed font-sans font-semibold">{officeAddr}</p>
         </div>
 
         <div className="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl space-y-1">
           <div className="flex items-center gap-1.5 font-bold text-slate-900 uppercase">
-            <MapPin className="w-3.5 h-3.5 text-emerald-700" />
-            <span>{language === 'hi' ? 'नागरिक संपर्क कार्यालय:' : 'Citizen Liaison Office:'}</span>
+            <Home className="w-3.5 h-3.5 text-emerald-700" />
+            <span>{language === 'hi' ? 'आवासीय कार्यालय (Residential Office):' : 'Residential Office:'}</span>
           </div>
-          <p className="text-slate-600 leading-relaxed font-sans">{resAddr}</p>
+          <p className="text-slate-600 leading-relaxed font-sans font-semibold">{resAddr}</p>
         </div>
       </div>
     </div>
